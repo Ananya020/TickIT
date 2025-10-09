@@ -146,8 +146,10 @@ class ChatRequest(BaseModel):
 class ChatResponse(BaseModel):
     response: str
 
-# --- API Endpoint ---
-@router.post("/chat", response_model=ChatResponse,
+# --- API Endpoints ---
+# Note: This router is mounted with prefix "/chat" in main.py.
+# Expose POST "/chat" by defining path "" here.
+@router.post("", response_model=ChatResponse,
              summary="Interact with the AI conversational assistant",
              response_description="The AI's response to the user's query.")
 async def chat_with_assistant(
@@ -186,3 +188,10 @@ async def chat_with_assistant(
         response_text = "I'm sorry, I encountered an error while processing your request. Please try again or rephrase your question."
 
     return ChatResponse(response=response_text)
+
+
+@router.get("/health", summary="Health check for chatbot service")
+async def chatbot_health():
+    if os.getenv("SKIP_AI_INIT", "false").lower() == "true":
+        return {"status": "ok", "agent": "skipped"}
+    return {"status": "ok", "agent": bool(agent_executor)}

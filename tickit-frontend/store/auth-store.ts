@@ -22,10 +22,23 @@ export const useAuthStore = create<AuthState>()(
       user: null,
       isAuthenticated: false,
       login: async ({ username, password }) => {
-        const res = (await api.post("/auth/login", { username, password })) as AuthResponse
-        const token = res.access_token || res.token
+        // OAuth2PasswordRequestForm expects x-www-form-urlencoded: username, password
+        const form = new URLSearchParams({ username, password })
+        const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
+        const res = await fetch(`${baseUrl}/auth/login`, {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: form,
+        })
+        const text = await res.text()
+        const data = text ? JSON.parse(text) : {}
+        if (!res.ok) {
+          const message = data?.message || data?.detail || res.statusText
+          throw new Error(message)
+        }
+        const token = data.access_token || data.token
         if (!token) throw new Error("No token returned")
-        const user = res.user || { email: username, role: "agent" }
+        const user = data.user || { email: username, role: "agent" }
         set({ token, user, isAuthenticated: true })
       },
       logout: async () => {

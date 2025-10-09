@@ -11,7 +11,10 @@ async function request(path: string, options: RequestInit = {}) {
     ...(options.headers || {}),
     ...(token ? { Authorization: `Bearer ${token}` } : {}),
   }
-  const res = await fetch(`${BASE_URL}${path}`, { ...options, headers })
+  const res = await fetch(`${BASE_URL}${path}`, { ...options, headers }).catch((e) => {
+    console.error("API network error:", e)
+    throw new Error("Network error. Is the backend running?")
+  })
   if (res.status === 401) {
     // Clear auth on unauthorized
     useAuthStore.getState().logout()
@@ -27,6 +30,7 @@ async function request(path: string, options: RequestInit = {}) {
   }
   if (!res.ok) {
     const message = data?.message || data?.detail || res.statusText
+    console.error("API error:", { path, status: res.status, message, data })
     throw new Error(message)
   }
   return data

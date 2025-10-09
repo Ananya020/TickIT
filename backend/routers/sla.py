@@ -4,6 +4,8 @@ from pydantic import BaseModel
 import random
 from datetime import datetime, timedelta
 from typing import Literal
+from typing import Optional
+from datetime import datetime
 
 from ..utils.logger import setup_logging
 from ..dependencies import get_current_user, require_roles

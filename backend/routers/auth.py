@@ -54,10 +54,15 @@ async def get_current_user_from_token(token: str = Depends(oauth2_scheme), db: S
         if email is None or user_role is None:
             raise credentials_exception
         token_data = TokenData(email=email, role=user_role)
-    except JWTError:
+    except JWTError as e:
+        logger.warning(f"JWT decode failed: {str(e)}")
         raise credentials_exception
     
-    user = db.query(User).filter(User.email == token_data.email).first()
+    try:
+        user = db.query(User).filter(User.email == token_data.email).first()
+    except Exception as db_err:
+        logger.error(f"DB error while fetching user for token: {db_err}")
+        raise credentials_exception
     if user is None:
         raise credentials_exception
     return UserPayload(email=user.email, role=UserRole(user.role)) # Return UserPayload for consistency
@@ -102,7 +107,11 @@ async def login_for_access_token(
     Authenticates a user and returns a JWT access token upon successful login.
     """
     logger.info(f"Login attempt for user: {form_data.username}")
-    user = db.query(User).filter(User.email == form_data.username).first()
+    try:
+        user = db.query(User).filter(User.email == form_data.username).first()
+    except Exception as db_err:
+        logger.error(f"DB error during login for {form_data.username}: {db_err}")
+        raise HTTPException(status_code=500, detail="Authentication temporarily unavailable")
     if not user or not verify_password(form_data.password, user.hashed_password):
         logger.warning(f"Login failed for {form_data.username}: Invalid credentials.")
         raise HTTPException(
@@ -111,4 +120,9 @@ async def login_for_access_token(
             headers={"WWW-Authenticate": "Bearer"},
         )
     
-    access_token_expires = timedelta(minutes=ACCESS
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={"sub": user.email, "role": user.role},
+        expires_delta=access_token_expires,
+    )
+    return {"access_token": access_token, "token_type": "bearer"}

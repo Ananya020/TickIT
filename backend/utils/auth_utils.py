@@ -1,9 +1,9 @@
 # ==== backend/utils/auth_utils.py ====
 from passlib.context import CryptContext
 
-# Configure password hashing context
-# This tells Passlib to use the bcrypt algorithm
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+# Use a pure-Python, widely available hashing scheme to avoid native bcrypt backend issues
+# pbkdf2_sha256 is strong and avoids platform-specific wheels
+pwd_context = CryptContext(schemes=["pbkdf2_sha256"], deprecated="auto")
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
     """

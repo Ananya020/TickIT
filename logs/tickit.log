@@ -1,0 +1,279 @@
+2025-10-09 16:43:25,092 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-09 16:43:28,790 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-09 16:43:28,790 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-09 16:43:28,921 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-09 16:45:06,620 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-09 16:45:09,419 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-09 16:45:09,419 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-09 16:45:09,465 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-09 16:46:21,934 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-09 16:46:24,585 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-09 16:46:24,585 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-09 16:46:24,620 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-09 16:46:25,415 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-09 16:46:25,489 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-09 16:46:25,592 - tickit_backend - ERROR - Cannot initialize Chatbot because 'langchain' is not installed.
+2025-10-09 16:46:25,614 - tickit_backend - INFO - Application startup event triggered.
+2025-10-09 16:46:25,651 - tickit_backend - INFO - Database tables created successfully.
+2025-10-09 16:46:25,657 - tickit_backend - INFO - Database is empty, seeding initial data...
+2025-10-09 16:46:25,657 - tickit_backend - INFO - Starting to seed initial data...
+2025-10-09 16:46:25,659 - tickit_backend - INFO - No users found, creating default users...
+2025-10-09 16:46:25,660 - tickit_backend - ERROR - Error during database initialization or seeding: bcrypt: no backends available -- recommend you install one (e.g. 'pip install bcrypt')
+2025-10-09 16:46:31,420 - tickit_backend - INFO - Root endpoint accessed.
+2025-10-09 16:50:15,465 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-09 16:50:32,606 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-09 16:50:35,187 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-09 16:50:35,187 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-09 16:50:35,217 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-09 16:50:35,979 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-09 16:50:36,044 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-09 16:50:36,130 - tickit_backend - ERROR - Cannot initialize Chatbot because 'langchain' is not installed.
+2025-10-09 16:50:36,153 - tickit_backend - INFO - Application startup event triggered.
+2025-10-09 16:50:36,155 - tickit_backend - INFO - Database tables created successfully.
+2025-10-09 16:50:36,161 - tickit_backend - INFO - Database is empty, seeding initial data...
+2025-10-09 16:50:36,161 - tickit_backend - INFO - Starting to seed initial data...
+2025-10-09 16:50:36,163 - tickit_backend - INFO - No users found, creating default users...
+2025-10-09 16:50:36,230 - tickit_backend - ERROR - Error during database initialization or seeding: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2025-10-09 16:52:24,039 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-09 16:52:24,041 - tickit_backend - WARNING - Login failed for orliesmith.miss@gmail.com: Invalid credentials.
+2025-10-09 16:56:49,004 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-09 16:56:49,004 - tickit_backend - WARNING - Login failed for orliesmith.miss@gmail.com: Invalid credentials.
+2025-10-09 16:57:04,557 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-09 16:57:04,558 - tickit_backend - WARNING - Login failed for orliesmith.miss@gmail.com: Invalid credentials.
+2025-10-09 16:57:52,034 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-09 17:01:18,117 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-09 17:01:20,979 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-09 17:01:20,979 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-09 17:01:21,013 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-09 17:01:21,843 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-09 17:01:21,924 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-09 17:01:22,021 - tickit_backend - ERROR - Cannot initialize Chatbot because 'langchain' is not installed.
+2025-10-09 17:01:22,042 - tickit_backend - INFO - Application startup event triggered.
+2025-10-09 17:01:22,045 - tickit_backend - INFO - Database tables created successfully.
+2025-10-09 17:01:22,051 - tickit_backend - INFO - Database is empty, seeding initial data...
+2025-10-09 17:01:22,051 - tickit_backend - INFO - Starting to seed initial data...
+2025-10-09 17:01:22,055 - tickit_backend - INFO - No users found, creating default users...
+2025-10-09 17:01:22,106 - tickit_backend - INFO - Created 4 default users.
+2025-10-09 17:01:22,106 - tickit_backend - INFO - No tickets found, generating synthetic ticket data...
+2025-10-09 17:01:22,131 - tickit_backend - INFO - Generated 50 synthetic tickets.
+2025-10-09 17:01:22,131 - tickit_backend - INFO - Initial data seeding complete.
+2025-10-09 17:01:22,131 - tickit_backend - INFO - Initial data seeded successfully.
+2025-10-09 17:08:22,742 - tickit_backend - INFO - Attempting to register new user: orliesmith.miss@gmail.com
+2025-10-09 17:08:22,771 - tickit_backend - INFO - User orliesmith.miss@gmail.com registered successfully with role enduser.
+2025-10-09 17:08:26,681 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-09 17:08:28,031 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-09 17:09:44,092 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-09 17:09:47,855 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 17:09:47,857 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 17:09:47,868 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 17:12:00,555 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-09 17:12:28,157 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-09 17:12:30,932 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-09 17:12:30,933 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-09 17:12:30,972 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-09 17:12:31,839 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-09 17:12:31,919 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-09 17:12:32,009 - tickit_backend - ERROR - Cannot initialize Chatbot because 'langchain' is not installed.
+2025-10-09 17:12:32,034 - tickit_backend - INFO - Application startup event triggered.
+2025-10-09 17:12:32,036 - tickit_backend - INFO - Database tables created successfully.
+2025-10-09 17:12:32,041 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-09 17:21:12,177 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-09 17:21:22,220 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-09 17:21:25,037 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-09 17:21:25,037 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-09 17:21:25,087 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-09 17:21:26,255 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-09 17:21:26,417 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-09 17:21:26,559 - tickit_backend - ERROR - Cannot initialize Chatbot because 'langchain' is not installed.
+2025-10-09 17:21:26,602 - tickit_backend - INFO - Application startup event triggered.
+2025-10-09 17:21:26,605 - tickit_backend - INFO - Database tables created successfully.
+2025-10-09 17:21:26,612 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-09 17:21:39,285 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:21:46,457 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-09 17:21:49,746 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 17:21:49,754 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 17:21:49,760 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 17:21:49,765 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:21:53,710 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 17:21:54,009 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 17:21:54,242 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 17:21:54,666 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 17:21:56,145 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 17:22:19,735 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:22:21,169 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 17:22:21,169 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 17:22:21,191 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 17:22:49,747 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:23:20,082 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:23:50,107 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:24:20,121 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:24:50,444 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:25:20,468 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:25:33,920 - tickit_backend - INFO - User orliesmith.miss@gmail.com sent query to chatbot: 'hi'
+2025-10-09 17:25:50,486 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:39:35,801 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:39:41,161 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-09 17:39:41,257 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 17:39:41,263 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 17:39:41,275 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:39:41,279 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 17:42:15,416 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:42:41,290 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 17:58:56,511 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-09 18:19:25,880 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-09 18:19:28,628 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-09 18:19:28,628 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-09 18:19:28,679 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-09 18:19:29,641 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-09 18:19:29,714 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-09 18:19:29,838 - tickit_backend - ERROR - Cannot initialize Chatbot because 'langchain' is not installed.
+2025-10-09 18:19:29,871 - tickit_backend - INFO - Application startup event triggered.
+2025-10-09 18:19:29,875 - tickit_backend - INFO - Database tables created successfully.
+2025-10-09 18:19:29,875 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-09 18:26:39,874 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-09 18:26:42,850 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:26:42,858 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 18:26:42,869 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:26:42,875 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:27:12,858 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:27:42,709 - tickit_backend - INFO - User orliesmith.miss@gmail.com attempting to create a ticket.
+2025-10-09 18:27:42,756 - tickit_backend - INFO - Ticket 7d850519-1b9a-4c31-9f5f-a7aa799d3a74 created by orliesmith.miss@gmail.com.
+2025-10-09 18:27:42,863 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:27:43,939 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 18:27:47,880 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 18:28:13,180 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:28:14,401 - tickit_backend - INFO - User orliesmith.miss@gmail.com attempting to create a ticket.
+2025-10-09 18:28:14,445 - tickit_backend - INFO - Ticket dc5213e6-46b5-4fd3-944b-709e7e58f886 created by orliesmith.miss@gmail.com.
+2025-10-09 18:28:14,550 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 18:28:40,342 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:28:40,347 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:28:40,371 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 18:28:43,193 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:28:50,076 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 18:28:52,132 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 18:29:13,516 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:29:36,184 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:29:36,193 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:29:36,212 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 18:29:37,339 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 18:29:39,203 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 18:29:40,360 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:29:40,363 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:29:40,375 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 18:29:43,525 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:29:47,441 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:29:47,446 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:29:47,458 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 18:30:13,532 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:30:54,662 - tickit_backend - INFO - Attempting to register new user: ananya.agra02@gmail.com
+2025-10-09 18:30:54,723 - tickit_backend - INFO - User ananya.agra02@gmail.com registered successfully with role enduser.
+2025-10-09 18:31:12,266 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-09 18:31:12,515 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:31:12,515 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 18:31:12,524 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:31:12,529 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:31:42,519 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:32:12,546 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:34:10,171 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:34:10,173 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:34:10,181 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 18:34:15,109 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:34:39,395 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query to chatbot: 'hi'
+2025-10-09 18:34:45,128 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:36:48,407 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:37:18,414 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:37:22,074 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 18:37:24,529 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 18:37:41,641 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:37:41,652 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:37:41,654 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 18:37:48,423 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:38:18,445 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:38:48,765 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:39:18,779 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:39:49,107 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:40:19,124 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:40:49,450 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:41:09,028 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:41:09,032 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 18:41:09,045 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 18:41:19,462 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:41:49,776 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:42:19,782 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:42:50,096 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:43:20,110 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:53:19,510 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:53:49,525 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:54:19,834 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:54:49,845 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:55:20,177 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:55:50,194 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:56:20,518 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:56:50,528 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:57:20,852 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:57:50,860 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:58:21,183 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:58:51,193 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 18:59:21,516 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 19:46:31,413 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:01:31,413 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:02:01,429 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:02:31,745 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:03:01,752 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:03:32,078 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:04:02,084 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:05:03,415 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:05:33,429 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:06:03,745 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:08:37,409 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:09:07,417 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:09:37,755 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:10:08,085 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:10:38,107 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:11:08,431 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:11:38,444 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:11:43,842 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 20:11:43,842 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 20:11:43,854 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 20:11:56,938 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 20:11:56,947 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 20:11:56,957 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 20:12:08,458 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:12:26,263 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query to chatbot: 'hi'
+2025-10-09 20:12:31,146 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query to chatbot: 'hi'
+2025-10-09 20:12:38,473 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:13:08,480 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:13:38,812 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:13:57,663 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:16:24,960 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-09 20:16:25,238 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 20:16:25,244 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 20:16:25,252 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 20:16:25,253 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:16:55,249 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:17:25,270 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:17:55,582 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:18:25,601 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:18:55,913 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:19:25,924 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:19:56,254 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:20:26,270 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:20:56,596 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:21:26,613 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:21:49,503 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 20:21:49,510 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 20:21:49,518 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 20:21:56,624 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:22:26,635 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:22:56,951 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:23:26,959 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:23:57,284 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:24:27,290 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:24:57,601 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:25:27,608 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:25:57,930 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:26:27,945 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:26:58,263 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:27:28,270 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:27:58,587 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 20:28:06,355 - tickit_backend - INFO - Application shutdown event triggered.

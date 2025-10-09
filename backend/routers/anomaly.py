@@ -7,6 +7,7 @@ from datetime import date, timedelta
 import numpy as np
 from pyod.models.iforest import IForest # Isolation Forest
 import pandas as pd # For data manipulation
+import os
 
 from ..utils.logger import setup_logging
 from ..dependencies import get_current_user, require_roles

@@ -83,3 +83,14 @@ async def root():
     """
     logger.info("Root endpoint accessed.")
     return {"message": "Welcome to TickIT AI Incident Management API!"}
+
+@app.get("/health", summary="Service health check")
+async def health():
+    try:
+        # simple DB connectivity check
+        with Session(engine) as session:
+            session.execute("SELECT 1")
+        return {"status": "ok"}
+    except Exception as e:
+        logger.error(f"Health check failed: {e}")
+        return {"status": "degraded", "error": str(e)}

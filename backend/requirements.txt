@@ -1,21 +1,71 @@
 # ==== backend/requirements.txt ====
+
+# FastAPI
 fastapi==0.111.0
 uvicorn[standard]==0.29.0
+email_validator>=2.0.0
+fastapi-cli>=0.0.2
+httpx>=0.23.0
+orjson>=3.2.1
+python-multipart>=0.0.7
+starlette<0.38.0
+ujson!=4.0.2,!=4.1.0,!=4.2.0,!=4.3.0,!=5.0.0,!=5.1.0,>=4.0.1
+
+# Database
 sqlalchemy==2.0.29
-psycopg2-binary==2.9.9 # For PostgreSQL, install psycopg2-binary
+psycopg2-binary==2.9.9
+greenlet!=0.4.17
+
+# Pydantic
 pydantic==2.7.1
+annotated-types>=0.4.0
+pydantic-core==2.18.2
+
+# Authentication
 python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
 python-dotenv==1.0.1
+
+# Data Science / ML
 nltk==3.8.1
+joblib
+regex>=2021.8.3
+tqdm
 scikit-learn==1.4.2
 sentence-transformers==2.7.0
-faiss-cpu==1.8.0 # Use faiss-gpu if you have a compatible GPU
+faiss-cpu==1.8.0
 pyod==1.1.1
+matplotlib
+numba>=0.51
+numpy>=1.24,<2
+scipy>=1.5.1
+six
+threadpoolctl>=2.0.0
 pandas==2.2.2
+pytz>=2020.1
+tzdata>=2022.7
+
+# LangChain ecosystem
 langchain==0.1.20
 langchain-core==0.1.52
 langchain-community==0.0.38
 langchain-openai==0.1.6
-langchain-google-genai==0.0.17 # If using Google Gemini
-tiktoken==0.6.0 # OpenAI tokenization
+langchain-google-genai==1.0.9
+aiohttp<4.0.0,>=3.8.3
+dataclasses-json<0.7,>=0.5.7
+langsmith<0.2.0,>=0.1.17
+tenacity<9.0.0,>=8.1.0
+jsonpatch<2.0,>=1.33
+google-generativeai<0.8.0,>=0.7.0
+openai<2.0.0,>=1.24.0
+langchain-text-splitters<0.1,>=0.0.1
+
+# OpenAI tokenization
+tiktoken==0.6.0
+
+# Other dependencies
+requests
+huggingface-hub>=0.15.1
+Pillow
+transformers>=4.34.0,<5.0.0
+torch>=1.11.0
