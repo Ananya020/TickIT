@@ -21,12 +21,12 @@ class TicketPriority(str, Enum):
 
 class TicketBase(BaseModel):
     """Base schema for ticket data."""
-    title: str = Field(..., min_length=5, max_length=200)
-    description: str = Field(..., min_length=10)
-    category: str = Field("Uncategorized", max_length=100)
-    priority: TicketPriority = Field(TicketPriority.MEDIUM)
-    status: TicketStatus = Field(TicketStatus.OPEN)
-    sla_deadline: Optional[datetime] = None
+    title: str = Field(..., min_length=5, max_length=200, example="My application is slow")
+    description: str = Field(..., min_length=10, example="The accounting software is extremely slow, freezing every few minutes. I cannot get my reports done.")
+    category: str = Field("Uncategorized", max_length=100, example="Software Issue")
+    priority: TicketPriority = Field(TicketPriority.MEDIUM, example="High")
+    status: TicketStatus = Field(TicketStatus.OPEN, example="In Progress")
+    sla_deadline: Optional[datetime] = Field(None, example="2024-06-01T10:00:00Z")
 
 class TicketCreate(TicketBase):
     """Schema for creating a new ticket."""
@@ -35,19 +35,19 @@ class TicketCreate(TicketBase):
 
 class TicketUpdate(BaseModel):
     """Schema for updating an existing ticket. All fields are optional."""
-    title: Optional[str] = Field(None, min_length=5, max_length=200)
-    description: Optional[str] = Field(None, min_length=10)
-    category: Optional[str] = Field(None, max_length=100)
-    priority: Optional[TicketPriority] = Field(None)
-    status: Optional[TicketStatus] = Field(None)
-    sla_deadline: Optional[datetime] = None
+    title: Optional[str] = Field(None, min_length=5, max_length=200, example="My application is still slow")
+    description: Optional[str] = Field(None, min_length=10, example="Still freezing, even after restart.")
+    category: Optional[str] = Field(None, max_length=100, example="Software Issue")
+    priority: Optional[TicketPriority] = Field(None, example="Critical")
+    status: Optional[TicketStatus] = Field(None, example="Resolved")
+    sla_deadline: Optional[datetime] = Field(None, example="2024-05-30T10:00:00Z")
 
 class TicketResponse(TicketBase):
     """Schema for responding with ticket data, including generated fields."""
-    ticket_id: uuid.UUID
-    created_at: datetime
-    updated_at: datetime
-    created_by: str
+    ticket_id: uuid.UUID = Field(..., example="a1b2c3d4-e5f6-7890-1234-567890abcdef")
+    created_at: datetime = Field(..., example="2024-05-29T14:30:00.123456Z")
+    updated_at: datetime = Field(..., example="2024-05-29T15:00:00.123456Z")
+    created_by: str = Field(..., example="user@example.com")
 
     class Config:
         orm_mode = True # Enable Pydantic to read data from SQLAlchemy models

@@ -31,16 +31,16 @@ class Ticket(Base):
     ticket_id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4, unique=True, nullable=False, index=True)
     title = Column(String, nullable=False)
     description = Column(String, nullable=False)
-    category = Column(String, default="Uncategorized") # e.g., Software Issue, Hardware Failure
-    priority = Column(String, default=TicketPriority.MEDIUM.value) # e.g., Low, Medium, High, Critical
-    status = Column(String, default=TicketStatus.OPEN.value) # e.g., Open, In Progress, Resolved, Closed
+    category = Column(String, default="Uncategorized", nullable=False) # e.g., Software Issue, Hardware Failure
+    priority = Column(String, default=TicketPriority.MEDIUM.value, nullable=False) # e.g., Low, Medium, High, Critical
+    status = Column(String, default=TicketStatus.OPEN.value, nullable=False) # e.g., Open, In Progress, Resolved, Closed
     
     sla_deadline = Column(DateTime, nullable=True) # Service Level Agreement deadline
     
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow, nullable=False)
     
-    created_by = Column(String, nullable=False, default="system") # Email of the user who created the ticket
+    created_by = Column(String, nullable=False) # Email of the user who created the ticket
 
     def __repr__(self):
         return f"<Ticket(id={self.ticket_id}, title='{self.title}', status='{self.status}')>"

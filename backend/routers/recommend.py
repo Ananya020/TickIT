@@ -1,12 +1,18 @@
 # ==== backend/routers/recommend.py ====
-from fastapi import APIRouter, Depends, HTTPException, status
-from pydantic import BaseModel
-from typing import List, Optional
-import random
-import numpy as np
-from sentence_transformers import SentenceTransformer, util
-import faiss
 import os
+import json
+import numpy as np
+import faiss
+from fastapi import APIRouter, Depends, HTTPException, status
+from pydantic import BaseModel, Field
+from typing import List, Dict
+
+# SentenceTransformers for generating embeddings
+try:
+    from sentence_transformers import SentenceTransformer
+except ImportError:
+    SentenceTransformer = None
+    print("Warning: 'sentence-transformers' library not found. Recommendation engine will be mocked.")
 
 from ..utils.logger import setup_logging
 from ..dependencies import get_current_user, require_roles
@@ -15,165 +21,162 @@ from ..schemas.auth import UserRole
 router = APIRouter()
 logger = setup_logging()
 
-# --- Mock Data for Resolution Recommendations ---
-# In a real system, these would come from a database of past resolutions
-MOCK_RESOLUTIONS_DATA = [
-    {"id": "res1", "text": "Reboot the system and check network connectivity.", "category": "Network Problem"},
-    {"id": "res2", "text": "Clear browser cache and cookies, then try again.", "category": "Software Issue"},
-    {"id": "res3", "text": "Verify user credentials and reset password.", "category": "Account Management"},
-    {"id": "res4", "text": "Update graphics drivers to the latest version.", "category": "Software Issue"},
-    {"id": "res5", "text": "Check hard drive health using diagnostic tools.", "category": "Hardware Failure"},
-    {"id": "res6", "text": "Ensure VPN client is connected and configured correctly.", "category": "Network Problem"},
-    {"id": "res7", "text": "Grant necessary file permissions to the application directory.", "category": "Software Issue"},
-    {"id": "res8", "text": "Replace faulty RAM modules.", "category": "Hardware Failure"},
-    {"id": "res9", "text": "Review firewall rules for blocked ports.", "category": "Network Problem"},
-    {"id": "res10", "text": "Escalate to security team for incident investigation.", "category": "Security Incident"},
-    {"id": "res11", "text": "Instruct user to check spam folder for activation email.", "category": "Account Management"},
-    {"id": "res12", "text": "Perform a clean install of the operating system.", "category": "Software Issue"},
-    {"id": "res13", "text": "Check server load and resource utilization.", "category": "Performance Issue"},
-    {"id": "res14", "text": "Consult the official documentation for setup instructions.", "category": "Documentation Error"},
-    {"id": "res15", "text": "Verify physical cable connections for all devices.", "category": "Hardware Failure"},
+# --- Configuration and Mock Knowledge Base ---
+MODEL_NAME = "all-MiniLM-L6-v2"
+FAISS_INDEX_PATH = "faiss_index.bin"
+RESOLUTIONS_DATA_PATH = "resolutions.json"
+EMBEDDING_DIMENSION = 384  # For all-MiniLM-L6-v2
+
+# This mock data represents a simple knowledge base of past resolutions.
+# In a real system, this would be populated from your database of resolved tickets.
+MOCK_KNOWLEDGE_BASE = [
+    {"description": "User cannot connect to VPN from home.", "resolution": "Instruct user to restart the VPN client and check their internet connection. Escalate if issue persists."},
+    {"description": "The accounting software is running extremely slow.", "resolution": "Clear the application cache and advise the user to close other resource-intensive programs. Check for pending updates."},
+    {"description": "My laptop screen is flickering constantly.", "resolution": "Advise user to update their graphics drivers from the manufacturer's website. If that fails, check the display cable connection."},
+    {"description": "I forgot my password for the HR portal.", "resolution": "Guide user through the self-service password reset link on the login page. Provide a temporary password if the self-service fails."},
+    {"description": "Printer is showing an 'offline' error message.", "resolution": "Verify the printer is powered on and connected to the network. Restart the printer and the print spooler service on the user's computer."},
+    {"description": "Unable to access shared network drive.", "resolution": "Check if the user is connected to the company VPN. Verify their permissions for the specific network share."},
+    {"description": "Application crashes on startup with error code 500.", "resolution": "This is a known issue. A patch is being deployed. Advise the user to wait for the update or use the web version as a workaround."},
+    {"description": "Email is not syncing on my mobile device.", "resolution": "Instruct the user to remove and re-add their email account on the mobile device. Ensure server settings are correct."},
 ]
 
-# --- Sentence-Transformer and FAISS Setup ---
-# This part would typically be initialized once at application startup.
-# We'll make it global for simplicity in this example.
-model_name = "all-MiniLM-L6-v2" # A good balance of speed and performance
-# Check if model already exists locally to avoid re-downloading
-try:
-    logger.info(f"Loading SentenceTransformer model: {model_name}...")
-    # This automatically downloads if not available
-    sentence_model = SentenceTransformer(model_name)
-    logger.info("SentenceTransformer model loaded.")
-except Exception as e:
-    logger.error(f"Failed to load SentenceTransformer model: {e}")
-    sentence_model = None # Handle case where model loading fails
-
+# --- Global Variables for Models and Data ---
+sentence_model = None
 faiss_index = None
-resolution_texts = []
-resolution_metadata = []
+resolutions_data = []
 
-def initialize_faiss_index():
+def build_and_save_faiss_index():
     """
-    Initializes and populates the FAISS index with mock resolution data.
+    Builds a FAISS index from the mock knowledge base and saves it to disk.
+    This function is called if the index file is not found on startup.
     """
-    global faiss_index, resolution_texts, resolution_metadata
-
-    if sentence_model is None:
-        logger.error("Cannot initialize FAISS index, SentenceTransformer model not loaded.")
+    global resolutions_data
+    logger.info(f"Building new FAISS index from knowledge base...")
+    if not SentenceTransformer:
+        logger.error("Cannot build FAISS index because 'sentence-transformers' is not installed.")
         return
 
-    logger.info("Initializing FAISS index with mock resolution data...")
-    resolution_texts = [res["text"] for res in MOCK_RESOLUTIONS_DATA]
-    resolution_metadata = MOCK_RESOLUTIONS_DATA
+    # Use the 'description' field to find similar problems.
+    descriptions = [item["description"] for item in MOCK_KNOWLEDGE_BASE]
+    resolutions_data = [item["resolution"] for item in MOCK_KNOWLEDGE_BASE]
+    
+    # Generate embeddings
+    logger.info(f"Generating embeddings for {len(descriptions)} descriptions using '{MODEL_NAME}'...")
+    embeddings = sentence_model.encode(descriptions, convert_to_tensor=False)
+    
+    # Create and populate FAISS index
+    index = faiss.IndexFlatL2(EMBEDDING_DIMENSION)
+    index.add(np.array(embeddings, dtype=np.float32))
+    
+    # Save index and resolutions to disk
+    faiss.write_index(index, FAISS_INDEX_PATH)
+    with open(RESOLUTIONS_DATA_PATH, 'w') as f:
+        json.dump(resolutions_data, f)
+        
+    logger.info(f"FAISS index with {index.ntotal} vectors saved to '{FAISS_INDEX_PATH}'.")
+    return index, resolutions_data
 
-    # Generate embeddings for the mock resolutions
-    embeddings = sentence_model.encode(resolution_texts, convert_to_numpy=True)
-    dimension = embeddings.shape[1]
+def load_faiss_index():
+    """
+    Loads the FAISS index and resolution data from disk on application startup.
+    If files are not found, it triggers the build process.
+    """
+    global sentence_model, faiss_index, resolutions_data
+    
+    if os.getenv("SKIP_AI_INIT", "false").lower() == "true":
+        logger.warning("Skipping FAISS index loading due to SKIP_AI_INIT=true.")
+        return
 
-    # Create a FAISS index (e.g., IndexFlatL2 for L2 distance)
-    faiss_index = faiss.IndexFlatL2(dimension)
-    faiss_index.add(embeddings)
-    logger.info(f"FAISS index initialized with {faiss_index.ntotal} resolutions.")
+    if not SentenceTransformer:
+        logger.error("Cannot load FAISS index because 'sentence-transformers' is not installed.")
+        return
+        
+    logger.info(f"Loading SentenceTransformer model: {MODEL_NAME}...")
+    sentence_model = SentenceTransformer(MODEL_NAME)
 
-# Initialize FAISS index on startup
-if os.getenv("SKIP_AI_INIT", "false").lower() != "true":
-    initialize_faiss_index()
-else:
-    logger.warning("Skipping AI model and FAISS initialization due to SKIP_AI_INIT=true.")
+    if os.path.exists(FAISS_INDEX_PATH) and os.path.exists(RESOLUTIONS_DATA_PATH):
+        logger.info(f"Loading existing FAISS index from '{FAISS_INDEX_PATH}'.")
+        faiss_index = faiss.read_index(FAISS_INDEX_PATH)
+        with open(RESOLUTIONS_DATA_PATH, 'r') as f:
+            resolutions_data = json.load(f)
+        logger.info(f"Successfully loaded index with {faiss_index.ntotal} vectors.")
+    else:
+        faiss_index, resolutions_data = build_and_save_faiss_index()
 
+# Load the index on application startup
+load_faiss_index()
 
+# --- Pydantic Schemas for API ---
 class RecommendationRequest(BaseModel):
-    ticket_description: str
-    category: Optional[str] = None # Optional: to filter recommendations by category
+    description: str = Field(..., min_length=10, example="My VPN is not connecting.")
 
-class ResolutionRecommendation(BaseModel):
-    resolution_id: str
-    resolution_text: str
-    similarity_score: float
-    category: Optional[str] = None
+class Recommendation(BaseModel):
+    resolution: str = Field(..., example="Restart the VPN client.")
+    similarity: float = Field(..., ge=0.0, le=1.0, example=0.91)
 
-@router.post("/resolution", response_model=List[ResolutionRecommendation],
-             summary="Recommend resolutions for a ticket description",
-             response_description="A list of top 3 recommended resolutions with similarity scores.",
+class RecommendationResponse(BaseModel):
+    recommendations: List[Recommendation]
+
+def convert_distance_to_similarity(distance: float) -> float:
+    """Converts L2 distance from FAISS to a more intuitive 0-1 similarity score."""
+    # A simple inverse relationship. The divisor can be tuned based on typical distance values.
+    # For normalized embeddings, max L2 distance is 2.
+    similarity = max(0.0, 1.0 - (distance / 2.0))
+    return round(similarity, 4)
+
+# --- API Endpoint ---
+@router.post("/resolution", response_model=RecommendationResponse,
+             summary="Recommend resolutions for a ticket",
+             response_description="A list of top 3 similar resolutions with similarity scores.",
              dependencies=[Depends(require_roles([UserRole.AGENT, UserRole.ADMIN]))])
 async def recommend_resolution(
     request: RecommendationRequest,
-    current_user: dict = Depends(get_current_user)
+    current_user: UserPayload = Depends(get_current_user)
 ):
     """
-    Recommends potential resolutions based on the similarity of the ticket description
-    to past resolution texts. Uses SentenceTransformer embeddings and FAISS search.
-    Requires 'Agent' or 'Admin' role.
-    """
-    logger.info(f"User {current_user['email']} requested resolution recommendation for: '{request.ticket_description[:50]}...'")
+    Recommends potential resolutions based on the similarity of a new ticket's description
+    to historical ticket data.
 
-    if faiss_index is None or sentence_model is None:
+    **How it works:**
+    1.  The system uses a `SentenceTransformer` model to convert the input ticket description into a numerical vector (embedding).
+    2.  This embedding is then compared against a pre-indexed collection of embeddings from a historical knowledge base using FAISS (Facebook AI Similarity Search).
+    3.  FAISS efficiently finds the top 3 most similar historical descriptions.
+    4.  The resolutions corresponding to these historical tickets are returned with a calculated similarity score.
+
+    **Future Enhancements:**
+    -   **Connect to a Real Knowledge Base:** The `MOCK_KNOWLEDGE_BASE` can be replaced with a direct connection to the `tickets` table in the database. A background job could periodically query for resolved tickets, generate their embeddings, and update the FAISS index.
+    -   **Use a Vector Database:** For larger-scale applications, the local FAISS index file could be replaced with a dedicated vector database like Pinecone, Weaviate, or Milvus for better scalability, management, and real-time updates.
+    """
+    logger.info(f"User {current_user.email} requested resolution recommendation for: '{request.description[:50]}...'")
+
+    if not faiss_index or not sentence_model:
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-            detail="AI Recommendation service is not initialized. Please check backend logs."
+            detail="Recommendation engine is not available. Check server logs."
         )
 
-    # Generate embedding for the query description
-    query_embedding = sentence_model.encode([request.ticket_description], convert_to_numpy=True)
-
-    # Perform similarity search using FAISS
-    k = 5 # Retrieve more than 3 to allow for filtering
-    distances, indices = faiss_index.search(query_embedding, k)
-
+    # 1. Generate embedding for the input description
+    query_embedding = sentence_model.encode([request.description])
+    query_embedding_np = np.array(query_embedding, dtype=np.float32)
+    
+    # 2. Perform similarity search
+    k = 3  # Number of recommendations to return
+    distances, indices = faiss_index.search(query_embedding_np, k)
+    
+    # 3. Format the results
     recommendations = []
-    seen_ids = set() # To avoid duplicate recommendations if filtering causes issues
-
-    for i, idx in enumerate(indices[0]):
-        if len(recommendations) >= 3: # Limit to top 3
-            break
-
-        if idx >= len(resolution_metadata): # Should not happen with correctly built index
-            logger.warning(f"FAISS index returned out-of-bounds index {idx}. Skipping.")
-            continue
-
-        res_data = resolution_metadata[idx]
-        if res_data["id"] in seen_ids:
-            continue
-
-        # Optional: Filter by category if provided in the request
-        if request.category and res_data.get("category") != request.category:
-            continue
-
-        # Convert FAISS distance (L2) to a similarity score (0-1)
-        # Higher distance means lower similarity. We need to invert this.
-        # A common way is to use exp(-distance) or 1 / (1 + distance)
-        # For this example, let's just scale based on min/max plausible distances, or a simpler inverse.
-        # Note: L2 distance is not directly cosine similarity. For cosine, FAISS IndexFlatIP can be used
-        # For simplicity, we'll map L2 distance to a pseudo-similarity.
-        # Max distance could be ~2.0 for normalized embeddings if they are exactly opposite.
-        # Min distance is 0.0 for identical embeddings.
+    for i in range(k):
+        idx = indices[0][i]
         distance = distances[0][i]
-        # A simple inverse mapping:
-        similarity = max(0, 1 - (distance / 2.0)) # Assuming max L2 distance is around 2 for normalized vectors
-
-        recommendations.append(ResolutionRecommendation(
-            resolution_id=res_data["id"],
-            resolution_text=res_data["text"],
-            similarity_score=round(float(similarity), 3),
-            category=res_data.get("category")
-        ))
-        seen_ids.add(res_data["id"])
+        
+        # Ensure the index is valid
+        if idx < len(resolutions_data):
+            recommendations.append(Recommendation(
+                resolution=resolutions_data[idx],
+                similarity=convert_distance_to_similarity(distance)
+            ))
 
     if not recommendations:
-        logger.info(f"No relevant recommendations found for description: '{request.ticket_description[:50]}...'")
-        # As a fallback, provide random recommendations if no good matches are found
-        # Or return an empty list if strictness is preferred.
-        # For now, let's return a few random ones if nothing specific matched.
-        random_recs = random.sample(MOCK_RESOLUTIONS_DATA, min(3, len(MOCK_RESOLUTIONS_DATA)))
-        recommendations = [
-            ResolutionRecommendation(
-                resolution_id=res["id"],
-                resolution_text=res["text"],
-                similarity_score=round(random.uniform(0.3, 0.6), 3), # Lower confidence for fallback
-                category=res.get("category")
-            ) for res in random_recs
-        ]
-        logger.info(f"Returning {len(recommendations)} random fallback recommendations.")
+        logger.warning(f"No recommendations found for: '{request.description[:50]}...'")
 
-    return recommendations
+    return RecommendationResponse(recommendations=recommendations)
