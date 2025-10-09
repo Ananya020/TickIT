@@ -1,0 +1,37 @@
+## Setup & Run Instructions
+
+### 1. Prerequisites
+
+*   Python 3.10+
+*   `pip` (Python package installer)
+*   Docker (optional, for containerized deployment)
+*   **Database:** PostgreSQL (recommended for production) or SQLite (default for development).
+
+### 2. Environment Variables
+
+Create a `.env` file in the `backend/` directory based on the `.env.template` below.
+
+**`.env.template`**:
+
+```ini
+# Database configuration
+# For SQLite (development):
+DATABASE_URL="sqlite:///./tickit.db"
+# For PostgreSQL (production, replace with your credentials):
+# DATABASE_URL="postgresql://user:password@host:port/dbname"
+
+# JWT Secret Key - IMPORTANT: Change this to a strong, random string in production!
+JWT_SECRET_KEY="your_super_secret_jwt_key"
+
+# Frontend URL for CORS. Adjust if your frontend is hosted elsewhere.
+FRONTEND_URL="http://localhost:3000"
+
+# AI/ML API Keys (Optional, for full chatbot functionality)
+# OPENAI_API_KEY="sk-YOUR_OPENAI_KEY"
+# GEMINI_API_KEY="YOUR_GEMINI_KEY"
+
+# Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+LOG_LEVEL="INFO"
+
+# Set to "true" to skip expensive AI model initialization during startup (e.g., for testing basic endpoints)
+# SKIP_AI_INIT="false"
