@@ -30,18 +30,16 @@ MOCK_CATEGORIES = [
 
 @router.post("/ticket", response_model=ClassificationResponse,
              summary="Classify a ticket description",
-             response_description="Predicted category and confidence score for the ticket.",
-             dependencies=[Depends(require_roles([UserRole.AGENT, UserRole.ADMIN]))])
+             response_description="Predicted category and confidence score for the ticket.")
 async def classify_ticket_description(
-    request: ClassificationRequest,
-    current_user: dict = Depends(get_current_user)
+    request: ClassificationRequest
 ):
     """
     Analyzes a ticket description and predicts its category using an AI model.
     Mocks a DistilBERT or TF-IDF + LogReg model.
     Requires 'Agent' or 'Admin' role.
     """
-    logger.info(f"User {current_user['email']} requested classification for description: '{request.description[:50]}...'")
+    logger.info(f"Classification requested for description: '{request.description[:50]}...'")
 
     # --- MOCK ML MODEL LOGIC ---
     # In a real scenario:

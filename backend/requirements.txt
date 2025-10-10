@@ -45,20 +45,13 @@ pandas==2.2.2
 pytz>=2020.1
 tzdata>=2022.7
 
-# LangChain ecosystem
-langchain==0.1.20
-langchain-core==0.1.52
-langchain-community==0.0.38
-langchain-openai==0.1.6
-langchain-google-genai==1.0.9
+# LangChain removed; using google-generativeai directly
 aiohttp<4.0.0,>=3.8.3
 dataclasses-json<0.7,>=0.5.7
-langsmith<0.2.0,>=0.1.17
 tenacity<9.0.0,>=8.1.0
 jsonpatch<2.0,>=1.33
-google-generativeai<0.8.0,>=0.7.0
-openai<2.0.0,>=1.24.0
-langchain-text-splitters<0.1,>=0.0.1
+google-generativeai==0.7.2
+openai==1.109.1
 
 # OpenAI tokenization
 tiktoken==0.6.0

@@ -5,7 +5,7 @@ from typing import List, Dict
 import random
 from datetime import date, timedelta
 import numpy as np
-from pyod.models.iforest import IForest # Isolation Forest
+from pyod.models.iforest import IForest # type: ignore # Isolation Forest
 import pandas as pd # For data manipulation
 import os
 

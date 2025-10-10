@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import Link from "next/link"
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
@@ -52,7 +53,9 @@ export default function LoginPage() {
             <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
               <ShieldCheck className="h-6 w-6" />
             </div>
-            <CardTitle className="text-2xl">TickIT</CardTitle>
+            <CardTitle className="text-2xl">
+              Tick<span className="text-primary">IT</span>
+            </CardTitle>
             <CardDescription className="text-sm text-muted-foreground">AI-Powered IT Help Desk</CardDescription>
           </CardHeader>
           <CardContent>
@@ -83,6 +86,12 @@ export default function LoginPage() {
                 {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Sign in"}
               </Button>
             </form>
+            <div className="mt-4 text-center text-sm text-muted-foreground">
+              Don&apos;t have an account?{" "}
+              <Link href="/register" className="text-primary hover:underline">
+                Create one
+              </Link>
+            </div>
           </CardContent>
         </Card>
       </motion.div>

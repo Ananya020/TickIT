@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -12,6 +11,7 @@ import { useToast } from "@/components/ui/use-toast"
 import { useRouter } from "next/navigation"
 import { api } from "@/lib/api"
 import { Loader2 } from "lucide-react"
+import { mutate as mutateSWR } from "swr"
 
 export function CreateTicketForm() {
   const [title, setTitle] = useState("")
@@ -19,6 +19,7 @@ export function CreateTicketForm() {
   const [category, setCategory] = useState("")
   const [priority, setPriority] = useState<"Low" | "Medium" | "High" | "Critical" | "">("")
   const [loading, setLoading] = useState(false)
+  const [file, setFile] = useState<File | null>(null)
   const { toast } = useToast()
   const router = useRouter()
 
@@ -26,9 +27,34 @@ export function CreateTicketForm() {
     e.preventDefault()
     setLoading(true)
     try {
-      const res = await api.post("/tickets/create", { title, description, category, priority })
-      const id = res?.id || res?.ticketId || res?.data?.id
+      let payload: any
+      if (file) {
+        const fd = new FormData()
+        fd.append("title", title)
+        fd.append("description", description)
+        if (category) fd.append("category", category)
+        if (priority) fd.append("priority", priority)
+        fd.append("image", file)
+        payload = fd
+      } else {
+        payload = { title, description, category, priority }
+      }
+
+      const res = await api.post("/tickets/create", payload)
+
+      // Extract ticket ID from backend response
+      const id = res?.ticket_id || res?.id || res?.data?.ticket_id || res?.data?.id
+
       toast({ title: "Ticket created", description: "We will look into this shortly." })
+
+      // Refresh all tickets lists (any key starting with /tickets/all)
+      await mutateSWR(
+        (key: any) => typeof key === "string" && key.startsWith("/tickets/all"),
+        undefined,
+        { revalidate: true }
+      )
+
+      // Navigate to the new ticket detail page
       if (id) router.push(`/tickets/${id}`)
       else router.push("/tickets")
     } catch (err: any) {
@@ -53,6 +79,7 @@ export function CreateTicketForm() {
           required
         />
       </div>
+
       <div className="space-y-2">
         <Label>Description</Label>
         <Textarea
@@ -63,6 +90,7 @@ export function CreateTicketForm() {
           required
         />
       </div>
+
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="space-y-2">
           <Label>Category</Label>
@@ -87,6 +115,13 @@ export function CreateTicketForm() {
           </Select>
         </div>
       </div>
+
+      <div className="space-y-2">
+        <Label>Attach image</Label>
+        <Input type="file" accept="image/*" onChange={(e) => setFile(e.target.files?.[0] ?? null)} />
+        <p className="text-xs text-muted-foreground">Optional. PNG, JPG up to ~5MB.</p>
+      </div>
+
       <Button type="submit" disabled={loading}>
         {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Submit Ticket"}
       </Button>

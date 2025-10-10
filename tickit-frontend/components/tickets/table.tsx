@@ -20,6 +20,22 @@ type Ticket = {
   status: "Open" | "In Progress" | "Resolved" | "Closed"
   createdAt: string
 }
+
+function priorityClasses(p: Ticket["priority"]) {
+  switch (p) {
+    case "Low":
+      return "bg-emerald-500/15 text-emerald-400 border-emerald-500/20"
+    case "Medium":
+      return "bg-amber-500/15 text-amber-400 border-amber-500/20"
+    case "High":
+      return "bg-orange-500/15 text-orange-400 border-orange-500/20"
+    case "Critical":
+      return "bg-red-500/15 text-red-400 border-red-500/20"
+    default:
+      return ""
+  }
+}
+
 export function TicketsTable({
   items,
   page,
@@ -57,7 +73,9 @@ export function TicketsTable({
                 <TableCell>{t.title}</TableCell>
                 <TableCell>{t.category}</TableCell>
                 <TableCell>
-                  <Badge variant="outline">{t.priority}</Badge>
+                  <Badge variant="outline" className={priorityClasses(t.priority)}>
+                    {t.priority}
+                  </Badge>
                 </TableCell>
                 <TableCell>{t.status}</TableCell>
                 <TableCell className="text-sm text-muted-foreground">

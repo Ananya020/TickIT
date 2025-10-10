@@ -1,15 +1,19 @@
-# ==== backend/routers/sla.py ====
+# backend/routers/sla.py
 from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel
-import random
+import random # Keep for possible future randomness, but not for core prediction
 from datetime import datetime, timedelta
 from typing import Literal
 from typing import Optional
 from datetime import datetime
+import pandas as pd # Import pandas for model input
 
 from ..utils.logger import setup_logging
 from ..dependencies import get_current_user, require_roles
 from ..schemas.auth import UserRole
+# Import the model and related utilities
+from backend.routers.sla_model import sla_model, SLA_DEFINITIONS, predict_breach_time
+
 
 router = APIRouter()
 logger = setup_logging()
@@ -18,7 +22,7 @@ class SLARiskRequest(BaseModel):
     priority: Literal["Low", "Medium", "High", "Critical"]
     open_time_hours: float  # How long the ticket has been open
     category: str
-    # created_at: datetime = datetime.utcnow() # Optionally pass creation time
+    # created_at: datetime = datetime.utcnow() # Optionally pass creation time - will use internally if provided
 
 class SLARiskResponse(BaseModel):
     risk_score: float
@@ -26,91 +30,69 @@ class SLARiskResponse(BaseModel):
     predicted_breach_time: Optional[datetime] = None
     model_used: str
 
-# Mock SLA definitions (in hours)
-SLA_DEFINITIONS = {
-    "Critical": 4,
-    "High": 8,
-    "Medium": 24,
-    "Low": 48
-}
-
 @router.post("/risk", response_model=SLARiskResponse,
              summary="Predict SLA breach risk for a ticket",
-             response_description="SLA risk score and status, and predicted breach time.",
-             dependencies=[Depends(require_roles([UserRole.AGENT, UserRole.ADMIN]))])
+             response_description="SLA risk score and status, and predicted breach time.")
 async def predict_sla_risk(
-    request: SLARiskRequest,
-    current_user: dict = Depends(get_current_user)
+    request: SLARiskRequest
 ):
     """
     Predicts the risk of an SLA breach for a given ticket based on its priority,
-    how long it has been open, and its category.
-    Mocks a Logistic Regression model.
+    how long it has been open, and its category using a pre-trained Logistic Regression model.
     Requires 'Agent' or 'Admin' role.
     """
-    logger.info(f"User {current_user['email']} requested SLA risk prediction for priority={request.priority}, open_time={request.open_time_hours}h, category='{request.category}'.")
+    logger.info(f"SLA risk prediction requested for priority={request.priority}, open_time={request.open_time_hours}h, category='{request.category}'.")
 
-    # --- MOCK ML MODEL LOGIC ---
-    # In a real scenario:
-    # 1. Load your pre-trained Logistic Regression model.
-    # 2. Encode categorical features (priority, category) into numerical format.
-    # 3. Use the model to predict the risk score.
-    #   features = [
-    #       one_hot_encode(request.priority),
-    #       request.open_time_hours,
-    #       one_hot_encode(request.category)
-    #   ]
-    #   risk_score = log_reg_model.predict_proba([features])[0][1] # Probability of breach
+    if sla_model is None:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="SLA prediction model is not loaded or trained. Please check backend logs."
+        )
 
-    base_sla_hours = SLA_DEFINITIONS.get(request.priority, 48)
+    # Prepare input for the model
+    input_data = pd.DataFrame([{
+        'priority': request.priority,
+        'category': request.category,
+        'open_time_hours': request.open_time_hours
+    }])
 
-    # Factors influencing risk:
-    # 1. Proximity to SLA deadline
-    # 2. Priority itself
-    # 3. Category (some categories might be historically riskier, mocked here)
+    try:
+        # Predict probability of breach (risk_score)
+        # model.predict_proba returns probabilities for [class_0, class_1]
+        # We want the probability of class_1 (breached)
+        risk_score = sla_model.predict_proba(input_data)[0][1]
 
-    # Calculate current progress towards SLA
-    progress_ratio = request.open_time_hours / base_sla_hours
+        # Determine risk status based on score
+        if risk_score > 0.8:
+            risk_status = "Critical"
+        elif risk_score > 0.6:
+            risk_status = "High"
+        elif risk_score > 0.3:
+            risk_status = "Medium"
+        else:
+            risk_status = "Low"
 
-    # Base risk score based on progress (0.0 to 1.0)
-    risk_score = min(1.0, max(0.0, progress_ratio * 0.8 + random.uniform(-0.1, 0.1))) # Add some randomness
+        # Predict breach time
+        # We need a reference 'now' for the breach time calculation.
+        # Assuming the request is being processed "now" for this calculation.
+        current_utc_time_for_breach_prediction = datetime.utcnow()
+        predicted_breach_time = predict_breach_time(
+            priority=request.priority,
+            open_time_hours=request.open_time_hours,
+            current_utc_time=current_utc_time_for_breach_prediction
+        )
 
-    # Adjust for category (mocked)
-    if "Security" in request.category or "Network" in request.category:
-        risk_score += 0.1
-    if "Software" in request.category and request.open_time_hours > 12:
-        risk_score += 0.05
+        logger.info(f"SLA Risk for ticket: Score={risk_score:.2f}, Status='{risk_status}'. Predicted Breach: {predicted_breach_time}.")
+        return SLARiskResponse(
+            risk_score=round(risk_score, 3),
+            risk_status=risk_status,
+            predicted_breach_time=predicted_breach_time,
+            model_used="Logistic Regression"
+        )
 
-    risk_score = max(0.0, min(1.0, risk_score)) # Ensure score is between 0 and 1
-
-    # Determine risk status
-    if risk_score > 0.8:
-        risk_status = "Critical"
-    elif risk_score > 0.6:
-        risk_status = "High"
-    elif risk_score > 0.3:
-        risk_status = "Medium"
-    else:
-        risk_status = "Low"
-
-    # Predict breach time if applicable
-    predicted_breach_time = None
-    if progress_ratio < 1.0: # If not already breached
-        remaining_time_hours = base_sla_hours - request.open_time_hours
-        # For simplicity, we assume creation_time is 'now' if not provided
-        # In a real scenario, created_at from the actual ticket would be used
-        predicted_breach_time = datetime.utcnow() + timedelta(hours=remaining_time_hours)
-    else:
-        # If open_time_hours already exceeds SLA, it's considered breached
-        # We can set predicted_breach_time to a past time or just leave it None/indicate already breached.
-        # For this mock, if already breached, we can infer it
-        pass
-
-
-    logger.info(f"SLA Risk for ticket: Score={risk_score:.2f}, Status='{risk_status}'.")
-    return SLARiskResponse(
-        risk_score=round(risk_score, 3),
-        risk_status=risk_status,
-        predicted_breach_time=predicted_breach_time,
-        model_used="Mock Logistic Regression"
-    )
+    except Exception as e:
+        logger.exception(f"Error during SLA risk prediction: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Error predicting SLA risk. Please try again."
+        )

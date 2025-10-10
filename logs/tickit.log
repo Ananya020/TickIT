@@ -277,3 +277,1577 @@
 2025-10-09 20:27:28,270 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
 2025-10-09 20:27:58,587 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
 2025-10-09 20:28:06,355 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-09 21:10:32,995 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-09 21:10:35,847 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-09 21:10:35,847 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-09 21:10:35,899 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-09 21:10:36,899 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-09 21:10:36,996 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-09 21:10:37,131 - tickit_backend - ERROR - Cannot initialize Chatbot because 'langchain' is not installed.
+2025-10-09 21:10:37,176 - tickit_backend - INFO - Application startup event triggered.
+2025-10-09 21:10:37,180 - tickit_backend - INFO - Database tables created successfully.
+2025-10-09 21:10:37,185 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-09 21:15:12,719 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-09 21:15:19,298 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:15:19,316 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:15:19,319 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:15:19,322 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 21:15:49,313 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:16:12,087 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 21:16:19,324 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:16:49,344 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:17:15,712 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:17:15,717 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:17:15,753 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 21:17:19,357 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:17:49,378 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:18:19,390 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:25:31,107 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:29:15,668 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:30:40,998 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 21:30:43,852 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 21:30:47,109 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:35:43,095 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:36:13,107 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:36:43,127 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:37:08,705 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 21:37:10,399 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 21:37:12,160 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 21:37:12,792 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 21:37:13,144 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:37:43,158 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:38:03,299 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:38:03,301 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:38:03,316 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 21:38:13,175 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:38:43,187 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:39:09,881 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:39:10,373 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:39:10,741 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:39:13,205 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:39:43,217 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:40:13,224 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:40:43,242 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:41:13,254 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:41:43,270 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:42:13,278 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:42:43,295 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:43:13,310 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:43:43,318 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:44:13,324 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:44:27,001 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:44:27,003 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:44:27,015 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 21:44:43,332 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:45:13,340 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:48:18,093 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:49:19,104 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:49:49,122 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:50:19,139 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:50:28,352 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:50:28,359 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:50:28,362 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 21:50:49,150 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:51:19,175 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:54:55,102 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:55:25,110 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:55:55,120 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:56:25,129 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:56:55,144 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:57:25,165 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:57:55,179 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:59:42,856 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 21:59:42,858 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:59:42,860 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 21:59:42,863 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:05:27,746 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:05:27,755 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:05:27,756 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:05:27,765 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:05:31,040 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-09 22:05:31,140 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:05:31,143 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:05:31,156 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:05:31,162 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:06:16,020 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:06:16,024 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:06:16,030 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:06:22,006 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:06:22,008 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:06:22,015 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:06:32,107 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:07:33,092 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:07:47,408 - tickit_backend - INFO - User ananya.agra02@gmail.com attempting to create a ticket.
+2025-10-09 22:07:47,445 - tickit_backend - INFO - Ticket 237b320d-acb5-466e-95e6-801caf085322 created by ananya.agra02@gmail.com.
+2025-10-09 22:07:47,736 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 22:07:59,098 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:07:59,104 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:07:59,106 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:08:03,101 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:08:33,118 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:09:22,967 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 22:09:27,764 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 22:09:28,642 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 22:09:34,104 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:14:15,781 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-09 22:14:16,308 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:14:16,309 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:14:16,325 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:14:16,327 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:14:46,320 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:14:47,604 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 22:14:54,505 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:14:54,508 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:14:54,518 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:14:57,381 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:14:59,512 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:23:18,614 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-09 22:23:30,150 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-09 22:23:33,100 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-09 22:23:33,101 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-09 22:23:33,134 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-09 22:23:34,121 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-09 22:23:34,202 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-09 22:23:34,317 - tickit_backend - ERROR - Cannot initialize Chatbot because 'langchain' is not installed.
+2025-10-09 22:23:34,348 - tickit_backend - INFO - Application startup event triggered.
+2025-10-09 22:23:34,352 - tickit_backend - INFO - Database tables created successfully.
+2025-10-09 22:23:34,360 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-09 22:23:44,098 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:23:51,108 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:23:51,142 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:23:51,145 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:23:51,148 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:23:54,359 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-09 22:23:54,559 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:23:54,561 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:23:54,578 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:23:54,585 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:28:34,185 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-09 22:28:38,849 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:28:38,858 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:28:38,860 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:28:38,866 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:28:52,145 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query to chatbot: 'hi'
+2025-10-09 22:29:39,089 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:30:09,406 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:30:12,436 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query to chatbot: 'hello'
+2025-10-09 22:30:28,608 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 22:30:36,876 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:30:36,878 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 22:30:36,884 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 22:30:39,418 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 22:31:09,440 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 23:00:44,824 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 23:13:54,761 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 23:13:56,899 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 23:13:56,908 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 23:13:56,909 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 23:13:56,915 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 23:17:26,785 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-09 23:17:27,011 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 23:17:27,016 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-09 23:17:27,040 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-09 23:17:27,044 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-09 23:17:30,114 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 23:17:31,606 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-09 23:49:38,282 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 00:04:22,982 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 00:04:25,514 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 00:04:25,514 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 00:04:25,552 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 00:04:26,358 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 00:04:26,443 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 00:04:26,950 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 00:04:26,953 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 00:04:26,959 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 00:04:58,545 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:05:02,401 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:05:02,425 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-10 00:05:04,905 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 00:05:06,996 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 00:05:06,997 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 00:05:07,009 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 00:05:07,011 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:05:13,527 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query: 'hi'
+2025-10-10 00:05:13,527 - tickit_backend - ERROR - Unhandled error in chat endpoint: module 'google.generativeai' has no attribute 'respond'
+Traceback (most recent call last):
+  File "C:\Users\anany\HACKPROJ\backend\routers\chatbot.py", line 119, in chat_with_assistant
+    resp = genai.respond(model="models/chat-bison-001", input=prompt, temperature=0.0)
+           ^^^^^^^^^^^^^
+AttributeError: module 'google.generativeai' has no attribute 'respond'. Did you mean: 'responder'?
+2025-10-10 00:05:22,797 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query: 'hi'
+2025-10-10 00:05:22,798 - tickit_backend - ERROR - Unhandled error in chat endpoint: module 'google.generativeai' has no attribute 'respond'
+Traceback (most recent call last):
+  File "C:\Users\anany\HACKPROJ\backend\routers\chatbot.py", line 119, in chat_with_assistant
+    resp = genai.respond(model="models/chat-bison-001", input=prompt, temperature=0.0)
+           ^^^^^^^^^^^^^
+AttributeError: module 'google.generativeai' has no attribute 'respond'. Did you mean: 'responder'?
+2025-10-10 00:05:36,994 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:11:35,729 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 00:11:43,555 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 00:11:46,505 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 00:11:46,505 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 00:11:46,559 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 00:11:47,753 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 00:11:47,867 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 00:11:48,499 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 00:11:48,501 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 00:11:48,507 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 00:12:10,079 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:12:10,104 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 00:12:10,109 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 00:12:10,109 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 00:12:13,183 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 00:12:26,046 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 00:12:28,742 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 00:12:28,742 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 00:12:28,784 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 00:12:29,624 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 00:12:29,698 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 00:12:30,125 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 00:12:30,128 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 00:12:30,136 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 00:12:53,855 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 00:12:57,137 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 00:12:57,139 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 00:12:57,151 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:12:57,156 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 00:13:07,433 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query: 'hi, please work this time'
+2025-10-10 00:13:07,433 - tickit_backend - ERROR - Unhandled error in chat endpoint: module 'google.generativeai' has no attribute 'respond'
+Traceback (most recent call last):
+  File "C:\Users\anany\HACKPROJ\backend\routers\chatbot.py", line 121, in chat_with_assistant
+    resp = genai.respond(model="models/chat-bison-001", input=prompt, temperature=0.0)
+           ^^^^^^^^^^^^^
+AttributeError: module 'google.generativeai' has no attribute 'respond'. Did you mean: 'responder'?
+2025-10-10 00:24:59,721 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:25:02,522 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query: 'hi'
+2025-10-10 00:25:02,522 - tickit_backend - ERROR - Unhandled error in chat endpoint: module 'google.generativeai' has no attribute 'respond'
+Traceback (most recent call last):
+  File "C:\Users\anany\HACKPROJ\backend\routers\chatbot.py", line 121, in chat_with_assistant
+AttributeError: module 'google.generativeai' has no attribute 'respond'. Did you mean: 'responder'?
+2025-10-10 00:25:07,699 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 00:25:48,627 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 00:25:52,346 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 00:25:52,346 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 00:25:52,391 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 00:25:55,939 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 00:25:56,057 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 00:28:43,188 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 00:28:45,837 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 00:28:45,837 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 00:28:45,879 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 00:28:46,720 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 00:28:46,800 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 00:30:53,106 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 00:30:56,126 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 00:30:56,126 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 00:30:56,164 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 00:30:56,959 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 00:30:57,039 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 00:30:57,550 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 00:30:57,554 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 00:30:57,559 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 00:31:13,858 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 00:32:01,425 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 00:32:05,301 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:32:05,310 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 00:32:05,327 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 00:32:05,327 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 00:32:13,897 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query: 'hello'
+2025-10-10 00:32:14,721 - tickit_backend - ERROR - Error in chat endpoint: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Traceback (most recent call last):
+  File "C:\Users\anany\HACKPROJ\backend\routers\chatbot.py", line 167, in chat_with_assistant
+    response = chat_session.send_message(request.query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anany\HACKPROJ\backend\.venv312\Lib\site-packages\google\generativeai\generative_models.py", line 578, in send_message
+    response = self.model.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anany\HACKPROJ\backend\.venv312\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anany\HACKPROJ\backend\.venv312\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 827, in generate_content
+    response = rpc(
+               ^^^^
+  File "C:\Users\anany\HACKPROJ\backend\.venv312\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anany\HACKPROJ\backend\.venv312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\anany\HACKPROJ\backend\.venv312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anany\HACKPROJ\backend\.venv312\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\anany\HACKPROJ\backend\.venv312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\anany\HACKPROJ\backend\.venv312\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anany\HACKPROJ\backend\.venv312\Lib\site-packages\google\api_core\grpc_helpers.py", line 77, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-10 00:32:35,314 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:33:05,329 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:35:39,396 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:40:19,554 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 00:44:28,099 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 00:44:31,058 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 00:44:31,058 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 00:44:31,109 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 00:44:32,521 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 00:44:32,639 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 00:44:33,182 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 00:44:33,184 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 00:44:33,191 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 00:44:41,408 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 00:44:44,860 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:44:44,875 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 00:44:44,875 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 00:44:44,886 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 00:44:53,900 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query: 'hi'
+2025-10-10 00:44:53,900 - tickit_backend - ERROR - Error in chat endpoint: module 'google.generativeai' has no attribute 'respond'
+Traceback (most recent call last):
+  File "C:\Users\anany\HACKPROJ\backend\routers\chatbot.py", line 126, in chat_with_assistant
+    resp = genai.respond(
+           ^^^^^^^^^^^^^
+AttributeError: module 'google.generativeai' has no attribute 'respond'. Did you mean: 'responder'?
+2025-10-10 00:45:05,168 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query: 'hello'
+2025-10-10 00:45:05,168 - tickit_backend - ERROR - Error in chat endpoint: module 'google.generativeai' has no attribute 'respond'
+Traceback (most recent call last):
+  File "C:\Users\anany\HACKPROJ\backend\routers\chatbot.py", line 126, in chat_with_assistant
+    resp = genai.respond(
+           ^^^^^^^^^^^^^
+AttributeError: module 'google.generativeai' has no attribute 'respond'. Did you mean: 'responder'?
+2025-10-10 00:46:52,211 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 00:52:48,259 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 00:52:50,950 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 00:52:50,950 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 00:52:51,009 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 00:52:52,302 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 00:52:52,392 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 00:52:52,995 - tickit_backend - WARNING - google.generativeai not installed. Using fallback responses.
+2025-10-10 00:52:53,019 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 00:52:53,027 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 00:52:53,036 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 00:53:39,926 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 00:53:43,304 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 00:53:43,308 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 00:53:43,312 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:53:43,320 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 00:53:56,447 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query: 'hi'
+2025-10-10 00:54:13,304 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 00:57:34,726 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:01:10,552 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 01:01:13,209 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 01:01:13,209 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 01:01:13,265 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 01:01:14,614 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 01:01:14,688 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 01:03:46,012 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 01:03:48,665 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 01:03:48,665 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 01:03:48,718 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 01:03:50,010 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 01:03:50,093 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 01:03:50,580 - tickit_backend - ERROR - Failed to configure Gemini: module 'google.generativeai' has no attribute 'Client'
+2025-10-10 01:03:50,604 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 01:03:50,604 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 01:03:50,612 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 01:04:16,881 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 01:04:20,914 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:04:20,928 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 01:04:20,935 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:04:20,939 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:04:30,519 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query: 'hiiiiii please work this time'
+2025-10-10 01:09:38,790 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 01:09:56,065 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 01:09:59,008 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 01:09:59,008 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 01:09:59,053 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 01:10:00,291 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 01:10:00,405 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 01:10:01,047 - tickit_backend - ERROR - Failed to configure Gemini: module 'google.generativeai' has no attribute 'Client'
+2025-10-10 01:10:01,082 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 01:10:01,087 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 01:10:01,098 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 01:10:03,914 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 01:10:07,986 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:10:08,000 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 01:10:08,008 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:10:08,013 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:10:16,297 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query: 'hi'
+2025-10-10 01:10:38,001 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:11:08,334 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:14:20,265 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 01:14:49,376 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 01:14:52,265 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 01:14:52,265 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 01:14:52,324 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 01:14:53,548 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 01:14:53,648 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 01:19:09,909 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 01:19:13,040 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 01:19:13,040 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 01:19:13,094 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 01:19:14,209 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 01:19:14,284 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 01:19:14,801 - tickit_backend - ERROR - Failed to configure Gemini: 'GenerativeModel' object has no attribute 'create_tool_from_function'
+2025-10-10 01:19:14,827 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 01:19:14,834 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 01:19:14,834 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 01:19:34,816 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 01:19:38,650 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:19:38,664 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:19:38,668 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 01:19:38,677 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:19:44,945 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query: 'hi'
+2025-10-10 01:32:09,305 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 01:33:38,211 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 01:33:41,332 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 01:33:41,332 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 01:33:41,379 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 01:33:42,181 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 01:33:42,251 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 01:33:42,649 - tickit_backend - INFO - [SUCCESS] Gemini configured via genai.configure. Skipping explicit GeminiClient instantiation.
+2025-10-10 01:33:42,658 - tickit_backend - INFO - [SUCCESS] GenerativeModel 'gemini-pro' instance created with tools.
+2025-10-10 01:33:42,658 - tickit_backend - INFO - [SUCCESS] Gemini agent fully configured and ready.
+2025-10-10 01:33:42,686 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 01:33:42,686 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 01:33:42,697 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 01:34:26,566 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 01:34:29,877 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:34:29,890 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:34:29,892 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 01:34:29,899 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:34:37,356 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query: 'hi'
+2025-10-10 01:34:59,890 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:37:28,650 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:37:28,659 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:37:28,663 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:37:28,665 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 01:37:32,313 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 01:37:32,410 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:37:32,412 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:37:32,424 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:37:32,427 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 01:37:38,727 - tickit_backend - INFO - User ananya.agra02@gmail.com sent query: 'hi'
+2025-10-10 01:38:02,730 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:38:44,400 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:38:47,616 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:38:47,620 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 01:38:47,625 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:38:47,629 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:38:51,522 - tickit_backend - INFO - User orliesmith.miss@gmail.com sent query: 'hi'
+2025-10-10 01:40:37,978 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 01:40:57,842 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 01:41:01,801 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 01:41:01,803 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 01:41:01,845 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 01:41:02,946 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 01:41:03,028 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 01:41:03,578 - tickit_backend - WARNING - google.generativeai not installed. Using fallback responses.
+2025-10-10 01:41:03,603 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 01:41:03,606 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 01:41:03,614 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 01:41:06,397 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:41:09,428 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:41:09,441 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:41:09,443 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 01:41:09,453 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:42:26,518 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 01:45:17,512 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 01:45:20,075 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 01:45:20,075 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 01:45:20,108 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 01:45:20,995 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 01:45:21,091 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 01:45:21,569 - tickit_backend - WARNING - google.generativeai not installed. Using fallback responses.
+2025-10-10 01:45:21,592 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 01:45:21,595 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 01:45:21,600 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 01:45:34,231 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:45:37,297 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 01:45:37,303 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 01:45:37,314 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:45:37,319 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 01:47:07,802 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 01:49:39,602 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 01:49:42,283 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 01:49:42,283 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 01:49:42,321 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 01:49:43,273 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 01:49:43,343 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 01:49:43,753 - tickit_backend - WARNING - google.generativeai not installed. Using fallback responses.
+2025-10-10 01:49:43,783 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 01:49:43,823 - tickit_backend - ERROR - Error during database initialization or seeding: (in table 'tickets', column 'title'): VARCHAR requires a length on dialect mysql
+2025-10-10 01:50:12,932 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:12,941 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:24,816 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:24,817 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:26,327 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:26,329 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:26,544 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:26,546 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:26,774 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:26,776 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:26,964 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:26,967 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:27,159 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:27,160 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:27,340 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:27,342 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:27,528 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:27,531 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:27,710 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:27,712 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:27,878 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:27,881 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:28,073 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:28,076 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:28,266 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:28,269 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:28,458 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:28,459 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:28,653 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:28,654 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:28,863 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:28,865 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:29,079 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:29,083 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:29,289 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:29,292 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:29,492 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:29,493 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:29,688 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:29,692 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:29,905 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:29,907 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:30,128 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:30,130 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:30,401 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:30,404 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:30,596 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:30,599 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:30,792 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:30,794 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:31,003 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:31,007 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:31,208 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:31,209 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 01:50:31,425 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 01:50:31,427 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 02:03:16,934 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 02:03:19,960 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 02:03:19,960 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 02:03:19,999 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 02:03:20,810 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 02:03:20,881 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 02:03:21,333 - tickit_backend - WARNING - google.generativeai not installed. Using fallback responses.
+2025-10-10 02:03:21,362 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 02:03:21,364 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 02:03:21,369 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 02:03:52,581 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 02:03:54,508 - tickit_backend - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-10-10 02:03:54,517 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 02:03:54,517 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 02:03:54,524 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 02:06:23,592 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 02:06:34,271 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 02:06:36,849 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 02:06:36,849 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 02:06:36,886 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 02:06:37,861 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 02:06:37,938 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 02:06:38,404 - tickit_backend - WARNING - google.generativeai not installed. Using fallback responses.
+2025-10-10 02:06:38,437 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 02:06:38,440 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 02:06:38,444 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 02:06:50,740 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 02:06:52,658 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 02:06:52,658 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 02:06:52,665 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.AGENT: 'agent'>, <UserRole.ADMIN: 'admin'>]).
+2025-10-10 02:06:56,477 - tickit_backend - WARNING - LLM unavailable. Serving fallback response for user orliesmith.miss@gmail.com.
+2025-10-10 02:17:07,406 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 02:17:15,768 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 02:17:18,373 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 02:17:18,374 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 02:17:18,409 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 02:17:19,301 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 02:17:19,372 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 02:17:19,851 - tickit_backend - WARNING - google.generativeai not installed. Using fallback responses.
+2025-10-10 02:17:19,880 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 02:17:19,883 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 02:17:19,888 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 02:17:31,003 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 02:17:34,008 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 02:17:34,008 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 02:17:34,046 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 02:17:34,863 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 02:17:34,937 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 02:17:35,324 - tickit_backend - WARNING - google.generativeai not installed. Using fallback responses.
+2025-10-10 02:17:35,352 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 02:17:35,355 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 02:17:35,361 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 02:20:36,552 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 02:20:56,451 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 02:20:59,085 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 02:20:59,085 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 02:20:59,128 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 02:21:00,092 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 02:21:00,173 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 02:21:00,655 - tickit_backend - WARNING - google.generativeai not installed. Using fallback responses.
+2025-10-10 02:21:00,682 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 02:21:00,684 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 02:21:00,693 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 02:21:04,519 - tickit_backend - WARNING - LLM unavailable. Serving fallback response for user anonymous.
+2025-10-10 02:21:04,519 - tickit_backend - ERROR - get_open_tickets error: module 'backend.models.ticket_crud' has no attribute 'get_all_tickets'
+2025-10-10 02:24:03,998 - tickit_backend - WARNING - LLM unavailable. Serving fallback response for user anonymous.
+2025-10-10 02:31:09,058 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 02:31:52,188 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 02:31:54,669 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 02:31:54,669 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 02:31:54,701 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 02:31:55,557 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 02:31:55,616 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 02:31:56,026 - tickit_backend - WARNING - google.generativeai not installed. Using fallback responses.
+2025-10-10 02:31:56,052 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 02:31:56,100 - tickit_backend - ERROR - Error during database initialization or seeding: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-10 02:32:19,336 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 02:32:19,345 - tickit_backend - ERROR - DB error during login for ananya.agra02@gmail.com: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-10 02:32:26,309 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 02:32:26,315 - tickit_backend - ERROR - DB error during login for ananya.agra02@gmail.com: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-10 02:32:26,983 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 02:32:27,004 - tickit_backend - ERROR - DB error during login for ananya.agra02@gmail.com: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-10-10 02:35:04,294 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 02:35:15,494 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 02:35:18,176 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 02:35:18,177 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 02:35:18,233 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 02:35:19,371 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 02:35:19,500 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 02:35:20,117 - tickit_backend - WARNING - google.generativeai not installed. Using fallback responses.
+2025-10-10 02:35:20,157 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 02:35:20,166 - tickit_backend - ERROR - Error during database initialization or seeding: (in table 'tickets', column 'title'): VARCHAR requires a length on dialect mysql
+2025-10-10 02:35:26,193 - tickit_backend - ERROR - DB error while fetching user for token: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 02:35:26,193 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 02:35:26,207 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 02:35:28,357 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 02:35:28,359 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 02:43:13,732 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 02:43:13,736 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 02:47:38,217 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 02:47:38,219 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 02:48:18,879 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 02:48:26,731 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 02:48:29,690 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 02:48:29,690 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 02:48:29,728 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 02:48:30,491 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 02:48:30,555 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 02:48:30,922 - tickit_backend - WARNING - google.generativeai not installed. Using fallback responses.
+2025-10-10 02:48:30,944 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 02:48:30,976 - tickit_backend - ERROR - Error during database initialization or seeding: (in table 'tickets', column 'title'): VARCHAR requires a length on dialect mysql
+2025-10-10 02:48:55,507 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 02:48:55,514 - tickit_backend - ERROR - DB error during login for orliesmith.miss@gmail.com: (pymysql.err.ProgrammingError) (1146, "Table 'tickit.users' doesn't exist")
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.`role` AS users_role 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'orliesmith.miss@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-10 03:32:51,655 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 03:44:47,769 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 03:44:50,293 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 03:44:50,293 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 03:44:50,330 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 03:44:51,253 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 03:44:51,325 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 03:44:51,788 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 03:44:51,813 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 03:44:51,837 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 03:44:51,849 - tickit_backend - INFO - Database is empty, seeding initial data...
+2025-10-10 03:44:51,849 - tickit_backend - INFO - Starting to seed initial data...
+2025-10-10 03:44:51,854 - tickit_backend - INFO - No users found, creating default users...
+2025-10-10 03:44:51,907 - tickit_backend - INFO - Created 4 default users.
+2025-10-10 03:44:51,908 - tickit_backend - INFO - No tickets found, generating synthetic ticket data...
+2025-10-10 03:44:51,952 - tickit_backend - INFO - Generated 50 synthetic tickets.
+2025-10-10 03:44:51,952 - tickit_backend - INFO - Initial data seeding complete.
+2025-10-10 03:44:51,952 - tickit_backend - INFO - Initial data seeded successfully.
+2025-10-10 03:44:56,867 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 03:44:56,877 - tickit_backend - WARNING - Login failed for orliesmith.miss@gmail.com: Invalid credentials.
+2025-10-10 03:45:08,661 - tickit_backend - INFO - Attempting to register new user: orliesmith.miss@gmail.com
+2025-10-10 03:45:08,693 - tickit_backend - INFO - User orliesmith.miss@gmail.com registered successfully with role enduser.
+2025-10-10 03:45:10,199 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 03:45:14,497 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 03:45:14,515 - tickit_backend - INFO - Dashboard metrics: {'total_tickets': 50, 'open_tickets': 37, 'closed_tickets': 13, 'mean_time_to_resolution_hours': 34.92}
+2025-10-10 03:45:14,517 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 03:45:14,526 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 03:45:14,531 - tickit_backend - INFO - Generated dashboard trends data for 30 days.
+2025-10-10 04:04:28,500 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 04:04:28,771 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 04:04:28,771 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 04:04:28,779 - tickit_backend - INFO - Dashboard metrics: {'total_tickets': 50, 'open_tickets': 37, 'closed_tickets': 13, 'mean_time_to_resolution_hours': 34.92}
+2025-10-10 04:04:28,784 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 04:04:28,787 - tickit_backend - INFO - Generated dashboard trends data for 30 days.
+2025-10-10 04:09:12,664 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 04:09:21,167 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 04:09:24,035 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 04:09:24,035 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 04:09:24,072 - tickit_backend - INFO - FAISS index initialized with 15 resolutions.
+2025-10-10 04:09:24,977 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 04:09:25,056 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 04:09:25,415 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 04:09:25,437 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 04:09:25,440 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 04:09:25,451 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 04:09:31,371 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 04:09:34,548 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 04:09:34,552 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 04:09:34,566 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 50, 'openTickets': 37, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 04:09:34,569 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 04:09:34,572 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 04:22:52,500 - tickit_backend - INFO - User orliesmith.miss@gmail.com attempting to create a ticket.
+2025-10-10 04:22:52,513 - tickit_backend - INFO - Ticket 9cc39bf0-8221-4c1a-90d6-3a8bd1f03c58 created by orliesmith.miss@gmail.com.
+2025-10-10 04:22:53,386 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-10 04:22:56,055 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 04:22:56,119 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 04:22:56,123 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 51, 'openTickets': 38, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 04:22:56,127 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 04:22:56,129 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 04:23:09,393 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 04:23:09,396 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 04:23:09,400 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 51, 'openTickets': 38, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 04:23:09,402 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 04:23:09,404 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 04:54:32,947 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 04:54:32,955 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 51, 'openTickets': 38, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 04:54:32,957 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 04:54:32,963 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 04:54:32,966 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 04:54:41,936 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-10 04:59:32,547 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 04:59:32,554 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 51, 'openTickets': 38, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 04:59:32,554 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 04:59:32,560 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 04:59:32,563 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 05:01:14,608 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 05:01:14,613 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 51, 'openTickets': 38, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 05:01:14,613 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 05:01:14,615 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 05:01:14,620 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 05:01:16,196 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 05:04:46,639 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 05:04:49,699 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 05:04:49,701 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 05:04:49,705 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 51, 'openTickets': 38, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 05:04:49,710 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 05:04:49,713 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 05:13:07,576 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 05:13:10,848 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 05:13:10,850 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 05:13:10,865 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 51, 'openTickets': 38, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 05:13:10,866 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 05:13:10,874 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 05:13:10,876 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 05:13:19,746 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-10 05:13:25,027 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 05:13:25,109 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 05:13:25,112 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 51, 'openTickets': 38, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 05:13:25,115 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 05:13:25,119 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 05:13:25,122 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 05:13:26,938 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-10 05:16:54,685 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-10 05:17:49,619 - tickit_backend - INFO - User orliesmith.miss@gmail.com attempting to create a ticket.
+2025-10-10 05:17:49,632 - tickit_backend - INFO - Ticket 90dbf2bb-9037-401f-9bdb-92ac2b87cefd created by orliesmith.miss@gmail.com.
+2025-10-10 05:17:49,717 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-10 05:17:53,217 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-10 05:17:53,975 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-10 05:17:54,145 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-10 05:17:54,354 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=100).
+2025-10-10 05:18:47,093 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting all tickets (skip=0, limit=10).
+2025-10-10 05:18:47,095 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 05:18:47,105 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 05:18:47,114 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 52, 'openTickets': 39, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 05:18:47,114 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 05:18:47,118 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 05:19:28,316 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 05:19:39,485 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 05:19:42,716 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 05:19:42,716 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 05:19:42,893 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 05:21:53,124 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 05:21:55,820 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 05:21:55,820 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 05:21:55,923 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 05:21:56,376 - tickit_backend - INFO - Generating synthetic data and training model for the first time...
+2025-10-10 05:21:56,419 - tickit_backend - INFO - Training SLA risk prediction model...
+2025-10-10 05:21:56,446 - tickit_backend - INFO - Model training complete.
+2025-10-10 05:21:56,456 - tickit_backend - INFO - Model saved to backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 05:21:57,360 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 05:21:57,464 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 05:21:58,009 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 05:21:58,047 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 05:21:58,072 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 05:21:58,080 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 05:22:22,651 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 05:22:25,905 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 05:22:25,939 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 52, 'openTickets': 39, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 05:22:25,993 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 05:22:26,000 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 05:22:26,007 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 05:22:39,030 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 05:22:39,096 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 05:22:39,106 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 52, 'openTickets': 39, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 05:22:39,111 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 05:22:39,114 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 05:28:05,004 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 05:28:05,004 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 05:28:23,538 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 05:28:23,970 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 05:28:23,970 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 05:28:23,979 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 05:28:23,983 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 05:28:23,983 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 05:28:23,992 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 05:28:24,000 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 52, 'openTickets': 39, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 05:29:32,786 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 05:29:33,041 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 05:29:33,047 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 52, 'openTickets': 39, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 05:29:33,048 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 05:29:33,050 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 05:29:33,055 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 05:29:33,059 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 05:29:33,061 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 07:17:45,893 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 07:17:56,787 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 07:17:59,474 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 07:17:59,474 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 07:17:59,676 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 07:18:00,271 - tickit_backend - INFO - Loading SLA risk prediction model from backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 07:18:01,080 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 07:18:01,226 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 07:18:01,962 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 07:18:02,008 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 07:18:02,040 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 07:18:02,057 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 07:18:09,249 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 07:18:13,419 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 07:18:13,434 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 52, 'openTickets': 39, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 07:18:13,434 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 07:18:13,454 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 07:18:13,460 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 07:18:13,467 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 07:18:13,467 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 07:19:41,630 - tickit_backend - INFO - User orliesmith.miss@gmail.com attempting to create a ticket.
+2025-10-10 07:19:41,682 - tickit_backend - INFO - Ticket bf35111a-5cda-4ba0-b045-fdd4a25dcc22 created by orliesmith.miss@gmail.com.
+2025-10-10 07:19:43,785 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket bf35111a-5cda-4ba0-b045-fdd4a25dcc22.
+2025-10-10 07:19:43,785 - tickit_backend - WARNING - Ticket bf35111a-5cda-4ba0-b045-fdd4a25dcc22 not found.
+2025-10-10 07:19:48,024 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket bf35111a-5cda-4ba0-b045-fdd4a25dcc22.
+2025-10-10 07:19:48,029 - tickit_backend - WARNING - Ticket bf35111a-5cda-4ba0-b045-fdd4a25dcc22 not found.
+2025-10-10 07:23:15,268 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 07:23:32,223 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 07:23:35,304 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 07:23:35,304 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 07:23:35,414 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 07:23:35,938 - tickit_backend - INFO - Loading SLA risk prediction model from backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 07:23:36,690 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 07:23:36,769 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 07:23:37,215 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 07:23:37,255 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 07:23:37,278 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 07:23:37,294 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 07:23:46,054 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket bf35111a-5cda-4ba0-b045-fdd4a25dcc22.
+2025-10-10 07:23:46,054 - tickit_backend - WARNING - Ticket bf35111a-5cda-4ba0-b045-fdd4a25dcc22 not found.
+2025-10-10 07:23:47,803 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 07:23:48,191 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 07:23:48,223 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 53, 'openTickets': 40, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 07:23:48,223 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 07:23:48,243 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 07:23:48,261 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 07:23:48,261 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 07:23:48,293 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 07:26:11,740 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 07:26:21,691 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 07:26:24,352 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 07:26:24,352 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 07:26:24,474 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 07:26:24,925 - tickit_backend - INFO - Loading SLA risk prediction model from backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 07:26:25,587 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 07:26:25,680 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 07:26:26,155 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 07:26:26,184 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 07:26:26,198 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 07:26:26,200 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 07:26:52,334 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 07:26:52,661 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 07:26:52,710 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 53, 'openTickets': 40, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 07:26:52,716 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 07:26:52,749 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 07:26:52,765 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 07:26:52,767 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 07:26:52,775 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 07:27:11,810 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 07:27:11,940 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 07:27:11,942 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 53, 'openTickets': 40, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 07:27:11,961 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 07:27:11,966 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 07:27:11,969 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 07:27:11,969 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 07:28:21,565 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 07:28:21,664 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 07:28:21,668 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 53, 'openTickets': 40, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 07:28:21,672 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 07:28:21,675 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 07:28:21,679 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 07:28:21,679 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 07:30:30,504 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 07:30:30,522 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 07:30:30,527 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 53, 'openTickets': 40, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 07:30:30,531 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 07:30:30,539 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 07:30:30,546 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 07:30:30,546 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 07:38:43,841 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 07:38:56,378 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 07:38:59,239 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 07:38:59,239 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 07:38:59,342 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 07:38:59,789 - tickit_backend - INFO - Loading SLA risk prediction model from backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 07:39:00,727 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 07:39:00,825 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 07:39:01,352 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 07:39:01,377 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 07:39:01,403 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 07:39:01,410 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 07:39:10,961 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 07:39:11,296 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 07:39:11,336 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 53, 'openTickets': 40, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 07:39:11,350 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 07:39:11,352 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 07:39:11,363 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 07:39:11,368 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 07:39:11,368 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 07:42:54,895 - tickit_backend - INFO - User orliesmith.miss@gmail.com attempting to create a ticket.
+2025-10-10 07:42:54,949 - tickit_backend - INFO - Ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8 created by orliesmith.miss@gmail.com.
+2025-10-10 07:42:55,087 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8.
+2025-10-10 07:42:55,093 - tickit_backend - WARNING - Ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8 not found.
+2025-10-10 07:45:55,136 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 07:46:39,084 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 07:46:42,114 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 07:46:42,114 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 07:46:42,302 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 07:46:42,915 - tickit_backend - INFO - Loading SLA risk prediction model from backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 07:46:43,768 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 07:46:43,904 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 07:46:44,613 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 07:46:44,653 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 07:46:44,690 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 07:46:44,709 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 07:46:46,407 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 07:46:46,858 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 07:46:46,895 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 54, 'openTickets': 41, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 07:46:46,906 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 07:46:46,916 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 07:46:46,924 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 07:46:46,934 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 07:46:46,934 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 07:48:14,848 - tickit_backend - INFO - Classification requested for description: 'My computer is running slow...'
+2025-10-10 07:48:14,848 - tickit_backend - INFO - Classified ticket: Category='Network Problem', Confidence=0.92, Model='Mock TF-IDF + LogReg'.
+2025-10-10 07:48:20,912 - tickit_backend - INFO - Resolution recommendation requested for: 'My computer is running slow...'
+2025-10-10 07:49:13,145 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 07:49:26,059 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 07:49:28,588 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 07:49:28,588 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 07:49:28,668 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 07:49:29,014 - tickit_backend - INFO - Loading SLA risk prediction model from backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 07:49:29,606 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 07:49:29,672 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 07:49:30,091 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 07:49:30,109 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 07:49:30,138 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 07:49:30,148 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 07:49:53,918 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 07:49:54,151 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 07:49:54,179 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 54, 'openTickets': 41, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 07:49:54,179 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 07:49:54,201 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 07:49:54,211 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 07:49:54,212 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 07:49:54,216 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 08:01:23,209 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 08:01:37,814 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 08:01:40,380 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 08:01:40,380 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 08:01:40,465 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 08:01:40,746 - tickit_backend - INFO - Loading SLA risk prediction model from backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 08:01:41,221 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 08:01:41,300 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 08:01:41,674 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 08:01:41,694 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 08:01:41,701 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 08:01:41,717 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 08:02:02,567 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 08:02:05,883 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 08:02:05,893 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 54, 'openTickets': 41, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 08:02:05,895 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 08:02:05,900 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 08:02:05,906 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 08:02:05,906 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 08:02:05,908 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 08:03:09,976 - tickit_backend - INFO - User orliesmith.miss@gmail.com attempting to create a ticket.
+2025-10-10 08:03:09,988 - tickit_backend - INFO - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c created by orliesmith.miss@gmail.com.
+2025-10-10 08:03:10,080 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 08:03:10,083 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 08:09:55,264 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 08:10:03,328 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 08:10:05,951 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 08:10:05,951 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 08:10:06,019 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 08:10:06,354 - tickit_backend - INFO - Loading SLA risk prediction model from backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 08:10:06,881 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 08:10:06,941 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 08:10:07,336 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 08:10:07,359 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 08:10:07,382 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 08:10:07,387 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 08:10:27,267 - tickit_backend - INFO - Attempting to register new user: aa6196@srmist.edu.in
+2025-10-10 08:10:27,302 - tickit_backend - INFO - User aa6196@srmist.edu.in registered successfully with role enduser.
+2025-10-10 08:10:34,601 - tickit_backend - INFO - Login attempt for user: aa6196@srmist.edu.in
+2025-10-10 08:10:38,164 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 08:10:38,179 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 08:10:38,191 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 08:10:38,197 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 08:10:38,201 - tickit_backend - WARNING - User aa6196@srmist.edu.in with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 08:10:38,203 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 08:10:38,203 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 08:11:04,685 - tickit_backend - WARNING - User aa6196@srmist.edu.in with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 08:11:04,764 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 08:11:04,770 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 08:11:04,770 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 08:11:04,770 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 08:11:04,780 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 08:11:04,780 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 08:22:56,221 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 08:23:34,452 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 08:23:37,167 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 08:23:37,167 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 08:23:37,251 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 08:23:39,019 - tickit_backend - INFO - Loading SLA risk prediction model from backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 08:23:40,343 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 08:23:40,416 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 08:23:41,139 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 08:23:41,163 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 08:23:41,194 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 08:23:41,204 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 08:23:47,841 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 08:23:47,954 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 08:23:48,044 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 08:23:48,056 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 08:23:48,061 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 08:23:48,065 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 08:23:48,069 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 08:23:48,069 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 08:23:52,549 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 08:23:52,552 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 08:39:54,342 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 08:40:03,099 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 08:40:06,115 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 08:40:06,115 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 08:40:06,191 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 08:40:06,486 - tickit_backend - INFO - Loading SLA risk prediction model from backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 08:40:06,988 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 08:40:07,050 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 08:40:07,521 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 08:40:07,545 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 08:40:07,573 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 08:40:07,578 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 08:40:40,123 - tickit_backend - INFO - Login attempt for user: aa6196@srmist.edu.in
+2025-10-10 08:40:40,149 - tickit_backend - WARNING - Login failed for aa6196@srmist.edu.in: Invalid credentials.
+2025-10-10 08:41:20,279 - tickit_backend - INFO - Attempting to register new user: aa6196@srmist.edu.in
+2025-10-10 08:41:20,281 - tickit_backend - WARNING - Registration failed: User with email aa6196@srmist.edu.in already exists.
+2025-10-10 08:41:31,495 - tickit_backend - INFO - Attempting to register new user: aa6196@srmist.edu.in
+2025-10-10 08:41:31,497 - tickit_backend - WARNING - Registration failed: User with email aa6196@srmist.edu.in already exists.
+2025-10-10 08:41:51,200 - tickit_backend - INFO - Login attempt for user: orliesmith.miss@gmail.com
+2025-10-10 08:41:52,874 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 08:41:52,898 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 08:41:52,904 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 08:41:52,909 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 08:41:52,914 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 08:41:52,915 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 08:41:52,915 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 08:42:11,052 - tickit_backend - INFO - Resolution recommendation requested for: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 08:42:11,118 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 08:42:11,122 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 08:42:15,262 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 08:42:15,264 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 08:42:22,634 - tickit_backend - INFO - Classification requested for description: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 08:42:22,635 - tickit_backend - INFO - Classified ticket: Category='Network Problem', Confidence=0.86, Model='Mock TF-IDF + LogReg'.
+2025-10-10 08:42:22,638 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 08:42:22,638 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 08:42:23,571 - tickit_backend - INFO - Classification requested for description: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 08:42:23,571 - tickit_backend - INFO - Classified ticket: Category='Documentation Error', Confidence=0.81, Model='Mock TF-IDF + LogReg'.
+2025-10-10 08:42:23,579 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 08:42:23,580 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 08:42:28,586 - tickit_backend - INFO - Resolution recommendation requested for: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 08:47:17,114 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 08:47:17,123 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 08:47:17,126 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 08:47:17,129 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 08:47:17,131 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 08:47:17,133 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 08:47:17,133 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 08:47:24,091 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket bf35111a-5cda-4ba0-b045-fdd4a25dcc22.
+2025-10-10 08:47:24,092 - tickit_backend - WARNING - Ticket bf35111a-5cda-4ba0-b045-fdd4a25dcc22 not found.
+2025-10-10 08:47:28,372 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket bf35111a-5cda-4ba0-b045-fdd4a25dcc22.
+2025-10-10 08:47:28,373 - tickit_backend - WARNING - Ticket bf35111a-5cda-4ba0-b045-fdd4a25dcc22 not found.
+2025-10-10 08:47:30,311 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 08:47:30,389 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 08:47:30,390 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 08:47:30,395 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 08:47:30,400 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 08:47:30,400 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 08:47:30,406 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 08:47:31,796 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket 90dbf2bb-9037-401f-9bdb-92ac2b87cefd.
+2025-10-10 08:47:31,798 - tickit_backend - WARNING - Ticket 90dbf2bb-9037-401f-9bdb-92ac2b87cefd not found.
+2025-10-10 08:47:34,833 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 08:47:34,906 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 08:47:34,907 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 08:47:34,911 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 08:47:34,917 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 08:47:34,918 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 08:47:34,922 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 08:47:37,110 - tickit_backend - INFO - Resolution recommendation requested for: 'VPN issue going on from a long time...'
+2025-10-10 08:47:37,135 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8.
+2025-10-10 08:47:37,137 - tickit_backend - WARNING - Ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8 not found.
+2025-10-10 08:47:41,112 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 08:47:41,191 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 08:47:41,191 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 08:47:41,195 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 08:47:41,200 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 08:47:41,201 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 08:47:41,204 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 08:47:52,842 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket d7a1f339-8ef0-4c2f-bb36-1cb89e028673.
+2025-10-10 08:47:52,844 - tickit_backend - WARNING - Ticket d7a1f339-8ef0-4c2f-bb36-1cb89e028673 not found.
+2025-10-10 08:47:55,362 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 08:47:55,429 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 08:47:55,435 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 08:47:55,440 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 08:47:55,440 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 08:47:55,442 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 08:47:55,445 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 08:50:25,147 - tickit_backend - INFO - Resolution recommendation requested for: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 08:50:25,161 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 08:50:25,162 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 08:50:55,211 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 08:50:55,221 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 08:50:55,226 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 08:50:55,229 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 08:50:55,232 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 08:50:55,235 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 08:50:55,235 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 08:50:56,822 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 08:50:56,824 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 08:50:56,830 - tickit_backend - INFO - Resolution recommendation requested for: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 08:51:00,425 - tickit_backend - INFO - Classification requested for description: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 08:51:00,425 - tickit_backend - INFO - Classified ticket: Category='Hardware Failure', Confidence=0.77, Model='Mock TF-IDF + LogReg'.
+2025-10-10 08:51:00,433 - tickit_backend - INFO - User orliesmith.miss@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 08:51:00,435 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 08:51:01,997 - tickit_backend - WARNING - User orliesmith.miss@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 08:51:02,081 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 08:51:02,081 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 08:51:02,085 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 08:51:02,088 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 08:51:02,089 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 08:51:02,091 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 09:08:39,353 - tickit_backend - INFO - Login attempt for user: aa6196@srmist.edu.in
+2025-10-10 09:08:39,364 - tickit_backend - WARNING - Login failed for aa6196@srmist.edu.in: Invalid credentials.
+2025-10-10 09:08:56,445 - tickit_backend - INFO - Attempting to register new user: ananya.agra02@gmail.com
+2025-10-10 09:08:56,478 - tickit_backend - INFO - User ananya.agra02@gmail.com registered successfully with role enduser.
+2025-10-10 09:08:57,730 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 09:08:57,836 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 09:08:57,926 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 09:08:57,930 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 09:08:57,935 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 09:08:57,939 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 09:08:57,939 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 09:08:57,940 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 09:09:00,704 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 09:09:00,704 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 09:09:00,714 - tickit_backend - INFO - Resolution recommendation requested for: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 09:09:03,386 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 09:09:03,462 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 09:09:03,463 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 09:09:03,468 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 09:09:03,472 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 09:09:03,474 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 09:09:03,477 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 09:09:50,478 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 09:09:50,540 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 09:09:50,540 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 09:09:50,552 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 09:09:50,552 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 09:09:50,552 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 09:09:50,556 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 09:09:54,080 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket bf35111a-5cda-4ba0-b045-fdd4a25dcc22.
+2025-10-10 09:09:54,081 - tickit_backend - WARNING - Ticket bf35111a-5cda-4ba0-b045-fdd4a25dcc22 not found.
+2025-10-10 09:09:56,578 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 09:09:56,656 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 09:09:56,661 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 09:09:56,664 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 09:09:56,667 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 09:09:56,674 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 09:09:56,674 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 09:09:58,525 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8.
+2025-10-10 09:09:58,527 - tickit_backend - WARNING - Ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8 not found.
+2025-10-10 09:09:58,535 - tickit_backend - INFO - Resolution recommendation requested for: 'VPN issue going on from a long time...'
+2025-10-10 09:10:02,842 - tickit_backend - INFO - Classification requested for description: 'VPN issue going on from a long time...'
+2025-10-10 09:10:02,842 - tickit_backend - INFO - Classified ticket: Category='Software Issue', Confidence=0.98, Model='Mock TF-IDF + LogReg'.
+2025-10-10 09:10:02,849 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8.
+2025-10-10 09:10:02,850 - tickit_backend - WARNING - Ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8 not found.
+2025-10-10 09:10:03,528 - tickit_backend - INFO - Classification requested for description: 'VPN issue going on from a long time...'
+2025-10-10 09:10:03,528 - tickit_backend - INFO - Classified ticket: Category='Data Request', Confidence=0.77, Model='Mock TF-IDF + LogReg'.
+2025-10-10 09:10:03,536 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8.
+2025-10-10 09:10:03,539 - tickit_backend - WARNING - Ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8 not found.
+2025-10-10 09:10:04,023 - tickit_backend - INFO - Classification requested for description: 'VPN issue going on from a long time...'
+2025-10-10 09:10:04,023 - tickit_backend - INFO - Classified ticket: Category='Network Problem', Confidence=0.84, Model='Mock TF-IDF + LogReg'.
+2025-10-10 09:10:04,031 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8.
+2025-10-10 09:10:04,032 - tickit_backend - WARNING - Ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8 not found.
+2025-10-10 09:10:04,179 - tickit_backend - INFO - Classification requested for description: 'VPN issue going on from a long time...'
+2025-10-10 09:10:04,179 - tickit_backend - INFO - Classified ticket: Category='Hardware Failure', Confidence=0.79, Model='Mock TF-IDF + LogReg'.
+2025-10-10 09:10:04,185 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8.
+2025-10-10 09:10:04,188 - tickit_backend - WARNING - Ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8 not found.
+2025-10-10 09:10:04,359 - tickit_backend - INFO - Classification requested for description: 'VPN issue going on from a long time...'
+2025-10-10 09:10:04,359 - tickit_backend - INFO - Classified ticket: Category='Performance Issue', Confidence=0.7, Model='Mock TF-IDF + LogReg'.
+2025-10-10 09:10:04,367 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8.
+2025-10-10 09:10:04,368 - tickit_backend - WARNING - Ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8 not found.
+2025-10-10 09:10:04,513 - tickit_backend - INFO - Classification requested for description: 'VPN issue going on from a long time...'
+2025-10-10 09:10:04,514 - tickit_backend - INFO - Classified ticket: Category='Software Issue', Confidence=0.85, Model='Mock TF-IDF + LogReg'.
+2025-10-10 09:10:04,523 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8.
+2025-10-10 09:10:04,524 - tickit_backend - WARNING - Ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8 not found.
+2025-10-10 09:10:04,665 - tickit_backend - INFO - Classification requested for description: 'VPN issue going on from a long time...'
+2025-10-10 09:10:04,666 - tickit_backend - INFO - Classified ticket: Category='Hardware Failure', Confidence=0.73, Model='Mock TF-IDF + LogReg'.
+2025-10-10 09:10:04,678 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8.
+2025-10-10 09:10:04,682 - tickit_backend - WARNING - Ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8 not found.
+2025-10-10 09:10:04,877 - tickit_backend - INFO - Classification requested for description: 'VPN issue going on from a long time...'
+2025-10-10 09:10:04,877 - tickit_backend - INFO - Classified ticket: Category='Software Issue', Confidence=0.9, Model='Mock TF-IDF + LogReg'.
+2025-10-10 09:10:04,883 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8.
+2025-10-10 09:10:04,886 - tickit_backend - WARNING - Ticket b78483fb-cc56-41dd-a52a-de7d6316e3d8 not found.
+2025-10-10 09:10:14,351 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 09:35:15,499 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 09:35:19,125 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 09:35:19,125 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 09:35:19,206 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 09:35:19,572 - tickit_backend - INFO - Loading SLA risk prediction model from backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 09:35:20,097 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 09:35:20,171 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 09:35:20,672 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 09:35:20,698 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 09:35:20,718 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 09:35:20,729 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 09:36:49,160 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 09:36:49,478 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 09:36:49,485 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 09:36:49,489 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 09:36:49,493 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 09:36:49,499 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 09:36:49,501 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 09:36:49,501 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 09:40:46,514 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 09:40:46,585 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 09:40:46,592 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 09:40:46,598 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 09:40:46,601 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 09:40:46,603 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 09:40:46,604 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 09:40:53,296 - tickit_backend - INFO - Resolution recommendation requested for: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 09:40:53,328 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 09:40:53,329 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 09:41:00,219 - tickit_backend - INFO - Resolution recommendation requested for: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 09:41:00,563 - tickit_backend - INFO - Resolution recommendation requested for: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 09:41:00,789 - tickit_backend - INFO - Resolution recommendation requested for: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 09:41:14,497 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 09:41:14,596 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 09:41:14,602 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 09:41:14,606 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 09:41:14,609 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 09:41:14,611 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 09:41:14,611 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 09:54:18,907 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 10:10:00,660 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 10:10:03,228 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 10:10:03,228 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 10:10:03,308 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 10:10:03,588 - tickit_backend - INFO - Loading SLA risk prediction model from backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 10:10:04,053 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 10:10:04,126 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 10:10:04,490 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 10:10:04,503 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 10:10:04,533 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 10:10:04,542 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 10:34:59,963 - tickit_backend - INFO - Application shutdown event triggered.
+2025-10-10 10:42:56,965 - tickit_backend - INFO - Loading SentenceTransformer model: all-MiniLM-L6-v2...
+2025-10-10 10:43:00,324 - tickit_backend - INFO - SentenceTransformer model loaded.
+2025-10-10 10:43:00,324 - tickit_backend - INFO - Initializing FAISS index with mock resolution data...
+2025-10-10 10:43:00,409 - tickit_backend - INFO - FAISS index initialized with 60 resolutions.
+2025-10-10 10:43:00,676 - tickit_backend - INFO - Loading SLA risk prediction model from backend/ml/sla_logistic_regression_model.joblib
+2025-10-10 10:43:01,158 - tickit_backend - INFO - Generating synthetic data and training Isolation Forest model...
+2025-10-10 10:43:01,233 - tickit_backend - INFO - Isolation Forest model trained.
+2025-10-10 10:43:01,609 - tickit_backend - WARNING - Gemini SDK not found. Using fallback chatbot.
+2025-10-10 10:43:01,631 - tickit_backend - INFO - Application startup event triggered.
+2025-10-10 10:43:01,642 - tickit_backend - INFO - Database tables created successfully.
+2025-10-10 10:43:01,650 - tickit_backend - INFO - Database already contains data, skipping seeding.
+2025-10-10 10:45:58,871 - tickit_backend - INFO - Login attempt for user: ananya.agra02@gmail.com
+2025-10-10 10:45:58,982 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 10:45:59,100 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 10:45:59,109 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 10:45:59,112 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 10:45:59,115 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 10:45:59,119 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 10:45:59,122 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 10:46:14,546 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 10:46:14,549 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 10:46:14,556 - tickit_backend - INFO - Resolution recommendation requested for: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 10:46:55,921 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 10:46:56,008 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 10:46:56,011 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 10:46:56,014 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 10:46:56,017 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 10:46:56,020 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 10:46:56,021 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 10:47:09,904 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 10:47:09,980 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 10:47:09,985 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 10:47:09,985 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 10:47:09,991 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 10:47:09,998 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 10:47:09,998 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 10:47:12,985 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 10:47:12,988 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 10:47:12,999 - tickit_backend - INFO - Resolution recommendation requested for: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 10:47:36,709 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 10:47:36,717 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 10:47:36,720 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 10:47:36,725 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 10:47:36,728 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 10:47:36,730 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 10:47:36,730 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 10:47:41,983 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 10:47:41,986 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 10:47:42,000 - tickit_backend - INFO - Resolution recommendation requested for: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 10:51:10,691 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 10:51:10,780 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 10:51:10,785 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 10:51:10,792 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 10:51:10,794 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 10:51:10,798 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 10:51:10,798 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 10:51:12,681 - tickit_backend - INFO - User ananya.agra02@gmail.com requesting ticket fbe87977-c372-487b-adfd-0fc21a3df76c.
+2025-10-10 10:51:12,682 - tickit_backend - WARNING - Ticket fbe87977-c372-487b-adfd-0fc21a3df76c not found.
+2025-10-10 10:51:12,696 - tickit_backend - INFO - Resolution recommendation requested for: 'TOUCHPAD IS NOT RESPONDING...'
+2025-10-10 10:51:19,964 - tickit_backend - WARNING - User ananya.agra02@gmail.com with role UserRole.ENDUSER attempted to access restricted endpoint (required: [<UserRole.ADMIN: 'admin'>]).
+2025-10-10 10:51:20,046 - tickit_backend - INFO - Dashboard metrics requested.
+2025-10-10 10:51:20,049 - tickit_backend - INFO - Dashboard metrics response: {'totalTickets': 55, 'openTickets': 42, 'resolvedToday': 13, 'avgResolutionTimeHours': 34.92}
+2025-10-10 10:51:20,055 - tickit_backend - INFO - Dashboard heatmap data requested.
+2025-10-10 10:51:20,056 - tickit_backend - INFO - Generated mock heatmap data.
+2025-10-10 10:51:20,056 - tickit_backend - INFO - Dashboard trends requested for last 30 days.
+2025-10-10 10:51:20,059 - tickit_backend - INFO - Generated daily ticket trends for dashboard.
+2025-10-10 11:01:34,489 - tickit_backend - INFO - Application shutdown event triggered.

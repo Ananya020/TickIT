@@ -1,11 +1,12 @@
 # ==== backend/models/ticket.py ====
 import uuid
-from sqlalchemy import Column, String, DateTime
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy import Column, String, DateTime, Text
+from sqlalchemy.dialects.mysql import CHAR
 from datetime import datetime
 from enum import Enum
 
 from ..database.db_connect import Base
+
 
 class TicketStatus(str, Enum):
     """Enum for possible ticket statuses."""
@@ -15,6 +16,7 @@ class TicketStatus(str, Enum):
     CLOSED = "Closed"
     PENDING = "Pending"
 
+
 class TicketPriority(str, Enum):
     """Enum for possible ticket priorities."""
     LOW = "Low"
@@ -22,25 +24,28 @@ class TicketPriority(str, Enum):
     HIGH = "High"
     CRITICAL = "Critical"
 
+
 class Ticket(Base):
     """
     SQLAlchemy model for an incident ticket.
     """
     __tablename__ = "tickets"
 
-    ticket_id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4, unique=True, nullable=False, index=True)
-    title = Column(String, nullable=False)
-    description = Column(String, nullable=False)
-    category = Column(String, default="Uncategorized") # e.g., Software Issue, Hardware Failure
-    priority = Column(String, default=TicketPriority.MEDIUM.value) # e.g., Low, Medium, High, Critical
-    status = Column(String, default=TicketStatus.OPEN.value) # e.g., Open, In Progress, Resolved, Closed
-    
-    sla_deadline = Column(DateTime, nullable=True) # Service Level Agreement deadline
-    
+    # Use CHAR(36) instead of PostgreSQL UUID (MySQL-safe)
+    ticket_id = Column(CHAR(36), primary_key=True, default=lambda: str(uuid.uuid4()), unique=True, nullable=False, index=True)
+
+    title = Column(String(255), nullable=False)
+    description = Column(Text, nullable=False)
+    category = Column(String(100), default="Uncategorized")
+    priority = Column(String(50), default=TicketPriority.MEDIUM.value)
+    status = Column(String(50), default=TicketStatus.OPEN.value)
+
+    sla_deadline = Column(DateTime, nullable=True)
+
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
-    
-    created_by = Column(String, nullable=False, default="system") # Email of the user who created the ticket
+
+    created_by = Column(String(255), nullable=False, default="system")
 
     def __repr__(self):
         return f"<Ticket(id={self.ticket_id}, title='{self.title}', status='{self.status}')>"

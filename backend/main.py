@@ -11,6 +11,7 @@ from .database import init_db
 from .routers import tickets, classify, recommend, sla, anomaly, chatbot, dashboard, auth
 from .utils.logger import setup_logging
 from .utils.seed_data import seed_initial_data
+from sqlalchemy import text
 
 # Set up logging
 logger = setup_logging()
@@ -73,7 +74,7 @@ app.include_router(classify.router, prefix="/classify", tags=["AI: Classificatio
 app.include_router(recommend.router, prefix="/recommend", tags=["AI: Recommendation"])
 app.include_router(sla.router, prefix="/sla", tags=["AI: SLA Prediction"])
 app.include_router(anomaly.router, prefix="/anomaly", tags=["AI: Anomaly Detection"])
-app.include_router(chatbot.router, prefix="/chat", tags=["AI: Conversational Assistant"])
+app.include_router(chatbot.router, prefix="/api/chat", tags=["AI: Conversational Assistant"])
 app.include_router(dashboard.router, prefix="/dashboard", tags=["Analytics & Dashboard"])
 
 @app.get("/", summary="Root endpoint for API status check")
@@ -89,7 +90,7 @@ async def health():
     try:
         # simple DB connectivity check
         with Session(engine) as session:
-            session.execute("SELECT 1")
+            session.execute(text("SELECT 1"))
         return {"status": "ok"}
     except Exception as e:
         logger.error(f"Health check failed: {e}")

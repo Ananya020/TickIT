@@ -6,15 +6,15 @@ const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
 
 async function request(path: string, options: RequestInit = {}) {
   const token = useAuthStore.getState().token
+  const isFormData = typeof options.body !== "undefined" && options.body instanceof FormData
+
   const headers: HeadersInit = {
-    "Content-Type": "application/json",
     ...(options.headers || {}),
+    ...(isFormData ? {} : { "Content-Type": "application/json" }),
     ...(token ? { Authorization: `Bearer ${token}` } : {}),
   }
-  const res = await fetch(`${BASE_URL}${path}`, { ...options, headers }).catch((e) => {
-    console.error("API network error:", e)
-    throw new Error("Network error. Is the backend running?")
-  })
+
+  const res = await fetch(`${BASE_URL}${path}`, { ...options, headers })
   if (res.status === 401) {
     // Clear auth on unauthorized
     useAuthStore.getState().logout()
@@ -30,7 +30,6 @@ async function request(path: string, options: RequestInit = {}) {
   }
   if (!res.ok) {
     const message = data?.message || data?.detail || res.statusText
-    console.error("API error:", { path, status: res.status, message, data })
     throw new Error(message)
   }
   return data
@@ -39,7 +38,15 @@ async function request(path: string, options: RequestInit = {}) {
 export const api = {
   fetcher: (path: string) => request(path, { method: "GET" }),
   get: (path: string) => request(path, { method: "GET" }),
-  post: (path: string, body?: any) => request(path, { method: "POST", body: JSON.stringify(body ?? {}) }),
-  put: (path: string, body?: any) => request(path, { method: "PUT", body: JSON.stringify(body ?? {}) }),
+  post: (path: string, body?: any) =>
+    request(path, {
+      method: "POST",
+      body: body instanceof FormData ? body : JSON.stringify(body ?? {}),
+    }),
+  put: (path: string, body?: any) =>
+    request(path, {
+      method: "PUT",
+      body: body instanceof FormData ? body : JSON.stringify(body ?? {}),
+    }),
   delete: (path: string) => request(path, { method: "DELETE" }),
 }

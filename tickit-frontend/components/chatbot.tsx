@@ -1,13 +1,12 @@
 "use client"
 
+import { useEffect, useState, useRef } from "react"
 import type React from "react"
-
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useUIStore } from "@/store/ui-store"
 import { api } from "@/lib/api"
-import { useState, useRef } from "react"
 import { MessageCircle } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ScrollArea } from "@/components/ui/scroll-area"
@@ -21,6 +20,11 @@ export function Chatbot() {
   const [text, setText] = useState("")
   const [sending, setSending] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
+  const endRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    endRef.current?.scrollIntoView({ behavior: "smooth", block: "end" })
+  }, [history, sending, open])
 
   const send = async () => {
     if (!text.trim()) return
@@ -29,10 +33,11 @@ export function Chatbot() {
     addMessage({ role: "user", content })
     setSending(true)
     try {
-      const res = await api.post("/chat", { query: content })
-      const reply = res?.response || res?.answer || JSON.stringify(res)
+      const res = await api.post("/api/chat", { query: content })
+      const reply = (res && (res.response || res.answer)) || JSON.stringify(res)
       addMessage({ role: "assistant", content: reply })
     } catch (e: any) {
+      console.error("Chatbot error:", e)
       addMessage({ role: "assistant", content: "Sorry, I could not process that. Please try again." })
     } finally {
       setSending(false)
@@ -56,14 +61,16 @@ export function Chatbot() {
       >
         <MessageCircle className="h-5 w-5" />
       </button>
+
       <Dialog open={open} onOpenChange={(o) => (o ? useUIStore.getState().openChatbot() : close())}>
-        <DialogContent className="sm:max-w-lg">
+        <DialogContent className="sm:max-w-lg max-h-[85vh]">
           <DialogHeader>
             <DialogTitle>AI Assistant</DialogTitle>
           </DialogHeader>
+
           <div className="flex flex-col h-[60vh]">
-            <ScrollArea className="flex-1 pr-2">
-              <div className="space-y-3">
+            <ScrollArea className="flex-1 pr-2 overflow-hidden">
+              <div className="space-y-3 pb-2 w-full">
                 {history.map((m, i) => (
                   <motion.div
                     key={i}
@@ -71,16 +78,37 @@ export function Chatbot() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.15 }}
                     className={cn(
-                      "p-3 rounded-xl max-w-[85%]",
-                      m.role === "user" ? "ml-auto bg-primary/10" : "mr-auto bg-accent",
+                      "p-3 rounded-xl max-w-[85%] w-fit overflow-hidden text-sm leading-relaxed break-words whitespace-pre-wrap",
+                      m.role === "user" ? "ml-auto bg-primary/10 text-foreground" : "mr-auto bg-accent text-foreground"
                     )}
+                    style={{
+                      wordBreak: "break-word",
+                      overflowWrap: "anywhere",
+                    }}
                   >
-                    <div className="whitespace-pre-wrap text-sm leading-relaxed">{m.content}</div>
+                    {m.content}
                   </motion.div>
                 ))}
-                {sending && <div className="mr-auto text-sm text-muted-foreground">Assistant is typing...</div>}
+
+                {sending && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="mr-auto text-sm text-muted-foreground flex items-center gap-1"
+                  >
+                    <div className="flex gap-1">
+                      <div className="w-1 h-1 bg-muted-foreground rounded-full animate-bounce" style={{ animationDelay: "0ms" }}></div>
+                      <div className="w-1 h-1 bg-muted-foreground rounded-full animate-bounce" style={{ animationDelay: "150ms" }}></div>
+                      <div className="w-1 h-1 bg-muted-foreground rounded-full animate-bounce" style={{ animationDelay: "300ms" }}></div>
+                    </div>
+                    Assistant is typing...
+                  </motion.div>
+                )}
+
+                <div ref={endRef} />
               </div>
             </ScrollArea>
+
             <div className="mt-3 flex gap-2">
               <Input
                 ref={inputRef}
