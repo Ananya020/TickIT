@@ -246,9 +246,4 @@ This project is released under the [MIT License](LICENSE).
 
 > “TICKIT bridges the gap between support tickets and intelligent insights — empowering teams to focus on solutions, not chaos.”
 
-```
 
----
-
-Would you like me to include a **mock setup guide** section too (showing how to seed fake dashboard/ticket data for demo mode)? It makes it easy to run without the backend for hackathon judging.
-```
