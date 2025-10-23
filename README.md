@@ -185,7 +185,7 @@ helpboard/
 ---
 
 ## 🌍 Alignment with SDGs (UN Sustainable Development Goals)
-```
+
 
 | Goal                                                 | Contribution                                                      |
 | ---------------------------------------------------- | ----------------------------------------------------------------- |
@@ -193,7 +193,7 @@ helpboard/
 | **SDG 9 – Industry, Innovation, and Infrastructure** | Integrates AI for smarter, scalable infrastructure management     |
 | **SDG 12 – Responsible Consumption**                 | Automates repetitive work, minimizing resource usage              |
 | **SDG 16 – Peace, Justice, and Strong Institutions** | Improves transparency and accountability in IT support operations |
-```
+
 ---
 
 ## 📈 Scalability Roadmap
